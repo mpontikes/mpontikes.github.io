@@ -10,7 +10,7 @@ class MainPage extends React.Component {
         super(props);
         this.state = {
             data: [
-                {pi: "https://pbs.twimg.com/media/CSbffJ7UYAAXV3R.jpg", da: "06//13/16", us: "mpontikes", av: "https://pbs.twimg.com/profile_images/709013243583279105/WNFfT9UX.jpg", ca:"Retreat Pciture"},
+                {pi: "https://pbs.twimg.com/media/CSbffJ7UYAAXV3R.jpg", da: "06//13/16", us: "mpontikes", av: "https://pbs.twimg.com/profile_images/709013243583279105/WNFfT9UX.jpg", ca:"Retreat Picture"},
                 {pi: "https://s3.amazonaws.com/infinum.web.production/repository_items/files/000/000/429/original/1.png?1413359570", da: "05//19/16", us: "matid", av: "https://avatars0.githubusercontent.com/u/19177617?v=3", ca:"New ticket app!"}
             ],
             user:"Anonymous",
