@@ -3,6 +3,7 @@ import TextField from 'material-ui/TextField';
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 import FontIcon from 'material-ui/FontIcon';
+import ProjectCard from './ProjectCard.jsx';
 
 const styles = {
   paper:{
@@ -56,6 +57,8 @@ class HomePage extends React.Component {
             style={styles.button}
           />
       </Paper>
+      <ProjectCard title="Slowagram" url="https://mpontikes.github.io/slowagram" dec="A parody of Instagram. Created using React components" disable={false} />
+      <ProjectCard title="PTickets" url="https://mpontikes.github.io/ptix" dec="A place to show tickets. Created using React and Redux components" disable={true}/>
     </div>	
     );
   }

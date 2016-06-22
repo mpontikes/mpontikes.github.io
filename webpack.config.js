@@ -7,7 +7,8 @@ var APP_DIR = path.resolve(__dirname, 'src/app');
 var config = {
   entry: {
     index: APP_DIR + '/Home/Index.jsx',
-    slowagram: APP_DIR + '/Slowagram/Slowagram.jsx'
+    slowagram: APP_DIR + '/Slowagram/Slowagram.jsx',
+    ptix: APP_DIR + '/PTix/PTix.jsx'
   },
   module : {
     loaders : [

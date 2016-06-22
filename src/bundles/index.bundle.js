@@ -32093,6 +32093,10 @@
 	
 	var _FontIcon2 = _interopRequireDefault(_FontIcon);
 	
+	var _ProjectCard = __webpack_require__(/*! ./ProjectCard.jsx */ 307);
+	
+	var _ProjectCard2 = _interopRequireDefault(_ProjectCard);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32171,7 +32175,9 @@
 	            primary: true,
 	            style: styles.button
 	          })
-	        )
+	        ),
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'Slowagram', url: 'https://mpontikes.github.io/slowagram', dec: 'A parody of Instagram. Created using React components', disable: false }),
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'PTickets', url: 'https://mpontikes.github.io/ptix', dec: 'A place to show tickets. Created using React and Redux components', disable: true })
 	      );
 	    }
 	  }]);
@@ -35080,6 +35086,100 @@
 	  muiTheme: _react.PropTypes.object.isRequired
 	};
 	exports.default = FontIcon;
+
+/***/ },
+/* 307 */
+/*!**************************************!*\
+  !*** ./src/app/Home/ProjectCard.jsx ***!
+  \**************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Paper = __webpack_require__(/*! material-ui/Paper */ 283);
+	
+	var _Paper2 = _interopRequireDefault(_Paper);
+	
+	var _RaisedButton = __webpack_require__(/*! material-ui/RaisedButton */ 286);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var styles = {
+		paper: {
+			margin: 25,
+			textAlign: 'center'
+		},
+		button: {
+			margin: 23
+		}
+	};
+	
+	var ProjectCard = function (_React$Component) {
+		_inherits(ProjectCard, _React$Component);
+	
+		function ProjectCard(props) {
+			_classCallCheck(this, ProjectCard);
+	
+			var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ProjectCard).call(this, props));
+	
+			_this.state = {};
+			return _this;
+		}
+	
+		_createClass(ProjectCard, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					_Paper2.default,
+					{ style: styles.paper },
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						'h1',
+						null,
+						' ',
+						this.props.title,
+						' '
+					),
+					_react2.default.createElement(
+						'h3',
+						null,
+						' ',
+						this.props.dec,
+						' '
+					),
+					_react2.default.createElement(_RaisedButton2.default, {
+						label: 'Go',
+						linkButton: true,
+						href: this.props.url,
+						secondary: true,
+						style: styles.button,
+						disabled: this.props.disable })
+				);
+			}
+		}]);
+	
+		return ProjectCard;
+	}(_react2.default.Component);
+	
+	exports.default = ProjectCard;
 
 /***/ }
 /******/ ]);
