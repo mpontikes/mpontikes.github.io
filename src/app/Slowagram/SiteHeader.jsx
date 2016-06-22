@@ -124,6 +124,10 @@ class SiteHeader extends React.Component {
             primaryText="Material Ui"
             href="http://www.material-ui.com/#/"
           />
+          <MenuItem
+            primaryText="Back to Home"
+            href="https://mpontikes.github.io"
+          />
         </Drawer>
         <Dialog
           title="Add Photo"

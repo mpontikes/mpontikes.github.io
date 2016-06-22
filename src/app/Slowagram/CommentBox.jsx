@@ -7,9 +7,10 @@ class CommentBox extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      data: [{user:"jlane", date: "", avatar: "http://lorempixel.com/100/100/nature/", comment: "First"}],
+      data: [{user:"ThatKid", date: "06/19/16", avatar: "https://www.bisnow.com/archives/houstonre/2011/Q1/images/frankroetzel.jpg", comment: "First"}],
       comment: "",
-      thecoms: null
+      thecoms: null,
+      s: 0
     }
     this.handleUpdate = this.handleUpdate.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -20,14 +21,14 @@ class CommentBox extends React.Component {
     this.setState({comment: event.target.value});
   }
   handleSubmit(){
-    this.state.data.push({user:this.props.user, date: "", avatar: "https://pbs.twimg.com/profile_images/709013243583279105/WNFfT9UX.jpg", comment: this.state.comment});
+    this.state.data.push({user:this.props.user, date: "Today", avatar: "http://blog.call-em-all.com/wp-content/uploads/2014/04/blog-why-i-love-callemall.png", comment: this.state.comment});
     this.handleUpdate();
+    this.setState({comment: ""});
     
   }
   handleUpdate(){
     this.setState({thecoms: this.state.data.map(function(com) {
             return( 
-              <div>
                 <Card>
                   <CardHeader
                     title={com.user}
@@ -37,8 +38,7 @@ class CommentBox extends React.Component {
                 <CardText>
                   {com.comment}
                 </CardText>
-              </Card>
-            </div>)
+              </Card>)
           })});
   }
 

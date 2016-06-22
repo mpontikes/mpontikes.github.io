@@ -6,7 +6,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import {indigo500, indigo700, grey100, indigo300, grey300, grey400, grey500,pinkA200,white, darkBlack, fullBlack, cyan500, green700} from 'material-ui/styles/colors';
 import {fade} from 'material-ui/utils/colorManipulator';
 import TextField from 'material-ui/TextField';
-
+import HomePage from './HomePage.jsx';
 
 injectTapEventPlugin();
 
@@ -46,7 +46,7 @@ const muiTheme = getMuiTheme({
 const Sup = () => (
   <div>
     <MuiThemeProvider muiTheme={muiTheme}>
-      <TextField />
+      <HomePage />
     </MuiThemeProvider>
   </div>
 );
