@@ -32171,13 +32171,13 @@
 	          _react2.default.createElement(_RaisedButton2.default, {
 	            label: 'Submit',
 	            linkButton: true,
-	            href: "https://mpontikes.github.io/" + this.state.text,
+	            href: "./" + this.state.text + ".html",
 	            primary: true,
 	            style: styles.button
 	          })
 	        ),
-	        _react2.default.createElement(_ProjectCard2.default, { title: 'Slowagram', url: 'https://mpontikes.github.io/slowagram', dec: 'A parody of Instagram. Created using React components', disable: false }),
-	        _react2.default.createElement(_ProjectCard2.default, { title: 'PTickets', url: 'https://mpontikes.github.io/ptix', dec: 'A place to show tickets. Created using React and Redux components', disable: true })
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'Slowagram', url: './slowagram.html', dec: 'A parody of Instagram. Created using React components', disable: false }),
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'PEvents', url: './ptix.html', dec: 'A place to show events. Created using React and Redux components', disable: false })
 	      );
 	    }
 	  }]);

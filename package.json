@@ -2,7 +2,11 @@
   "name": "pontinet",
   "version": "1.2.0",
   "description": "This is were I test my web stuff",
-  "keywords": ["pontikes", "michael", "net"],
+  "keywords": [
+    "pontikes",
+    "michael",
+    "net"
+  ],
   "main": "index.html",
   "scripts": {
     "dev": "webpack -d --watch",
@@ -15,13 +19,16 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "react": "^15.1.0",
+    "react-bootstrap": "^0.29.5",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",
     "webpack": "^1.13.1"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/mpontikes/mpontikes.github.io.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mpontikes/mpontikes.github.io.git"
+  },
+  "devDependencies": {
+    "babel-preset-stage-1": "^6.5.0"
   }
 }

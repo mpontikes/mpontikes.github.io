@@ -8,7 +8,8 @@ var config = {
   entry: {
     index: APP_DIR + '/Home/Index.jsx',
     slowagram: APP_DIR + '/Slowagram/Slowagram.jsx',
-    ptix: APP_DIR + '/PTix/PTix.jsx'
+    ptix: APP_DIR + '/PEvents/PTix.jsx',
+    test: APP_DIR + '/Testing/Test.jsx'
   },
   module : {
     loaders : [
