@@ -10,7 +10,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "webpack -d --watch",
-    "build": "webpack -p"
+    "test": "webpack --progress --colors"
   },
   "author": "Michael Pontikes",
   "license": "MIT",
