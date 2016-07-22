@@ -30,7 +30,7 @@ const muiTheme = getMuiTheme({
     primary1Color: "#CF5300",
     primary2Color: "#CF5300",
     primary3Color: indigo300,
-    accent1Color: green700,
+    accent1Color: "#7C3100",
     accent2Color: grey100,
     accent3Color: grey500,
     textColor: darkBlack,
@@ -43,14 +43,22 @@ const muiTheme = getMuiTheme({
     shadowColor: fullBlack,
   },
 });
-
+var edata = [{title: "First Day of School", date: "1472043600000"},{title:"Mooov-In", date: "1471608000000"},{title:"First Home Football Game", date:"1473031800000"}];
+var k = 0;
+var handleChange= function(){
+  console.log("Sup");
+}
 const Count = function(){
-  var f = <Counter />;
+  var f = edata.map(function(picture) {
+  k = k+1;
+  return <Counter title={picture.title} date={picture.date} key={k}/>;});
   return (<div>
     <MuiThemeProvider muiTheme={muiTheme}>
       <div>
-        <Header />
+        <Header editor={handleChange}/>
+        <Grid>
         {f}
+        </Grid>
       </div>
     </MuiThemeProvider>
   </div>);

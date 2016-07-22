@@ -6,28 +6,30 @@ import {Grid, Row, Col, Clearfix, Button, Table} from 'react-bootstrap';
 class Counter extends React.Component {
     constructor(props){
     super(props);
-    this.state = {}
+    const tDate = new Date();
+    const cDate = new Date();
+    tDate.setTime(this.props.date);
+    this.state = {tdate: tDate, time: "Please wait..."}
+    this.handleSec = this.handleSec.bind(this);
+    this.interval = setInterval(this.handleSec, 1000);
+}
+handleSec() {
+	var nes = new Date(this.state.tdate.getTime() - Date.now());
+	var dy = (Math.floor(nes.getTime()/86400000)); 
+	this.setState({time: dy + " : " + nes.getUTCHours() + " : " + nes.getUTCMinutes() + " : " + nes.getUTCSeconds()});
 }
 
   render() {
+  	var today = new Date();
     return (
-    	<Grid>
-	    	<Col md={4}>
+ 
+	    <Col md={6} lg={6}>
 	    	<Paper>
-	    		<h1> Sup </h1>
+	    		<h1 style={{textAlign: "center", paddingTop: "20px", paddingBottom: "10px"}}>{this.props.title}</h1>
+	    		<h4 style={{textAlign: "center"}}> Days : Hours : Mins : Secs </h4>
+	    		<h1 style={{textAlign:"center", paddingBottom: "20px"}}> {this.state.time}</h1>
 	    	</Paper>
-	    	</Col>
-	    	<Col md={4}>
-	    	<Paper>
-	    		<h1> Sup </h1>
-	    	</Paper>
-	    	</Col>
-	    	<Col md={4}>
-	    	<Paper>
-	    		<h1> Sup </h1>
-	    	</Paper>
-	    	</Col>
-    	</Grid>
+	    </Col>
   );}
 }
 
