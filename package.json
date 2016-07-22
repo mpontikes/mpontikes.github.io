@@ -1,6 +1,6 @@
 {
   "name": "pontinet",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "This is were I test my web stuff",
   "keywords": [
     "pontikes",
@@ -9,26 +9,33 @@
   ],
   "main": "index.html",
   "scripts": {
-    "dev": "webpack -d --watch",
-    "test": "webpack --progress --colors"
+    "compile": "webpack -d",
+    "dev": "webpack -d --progress --colors --watch",
+    "test": "webpack --progress --colors -d --display-chunks --display-reasons --display-error-details"
   },
   "author": "Michael Pontikes",
   "license": "MIT",
   "dependencies": {
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "react": "^15.1.0",
-    "react-bootstrap": "^0.29.5",
-    "react-dom": "^15.1.0",
+    "babel-preset-react": "^6.11.1",
+    "react": "^15.2.1",
+    "react-bootstrap": "^0.30.0-rc.1",
+    "react-dom": "^15.2.1",
     "react-redux": "^4.4.5",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "material-ui": "^0.15.2",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.5.2",
+    "babel-preset-stage-1": "^6.5.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mpontikes/mpontikes.github.io.git"
   },
-  "devDependencies": {
-    "babel-preset-stage-1": "^6.5.0"
-  }
+  "bugs": {
+    "url": "https://github.com/mpontikes/mpontikes.github.io/issues"
+  },
+  "homepage": "https://mpontikes.github.io",
+  "private": true
 }
