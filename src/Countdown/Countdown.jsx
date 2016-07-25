@@ -43,7 +43,7 @@ const muiTheme = getMuiTheme({
     shadowColor: fullBlack,
   },
 });
-var edata = [{title: "First Day of School", date: "1472043600000"},{title:"Mooov-In", date: "1471608000000"},{title:"ALEKS Due", date:"1471928340000"},{title:"First Home Football Game", date:"1473031800000"}];
+var edata = [{title: "First Day of School", date: "1472043600000"},{title:"Mooov-In", date: "1471608000000"},{title:"ALEKS Due", date:"1471928340000"},{title:"Girls Rush", date:"1471302000000"},{title:"First Home Football Game", date:"1473031800000"}];
 var k = 0;
 var handleChange= function(){
   console.log("Sup");
