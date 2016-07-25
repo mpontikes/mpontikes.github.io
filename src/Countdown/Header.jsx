@@ -28,7 +28,7 @@ class Header extends React.Component {
   render() {
     return (
     	<div>
-       <AppBar title="Countdown" showMenuIconButton={false} iconElementRight={<ContentAddBox onTouchTap={this.handleRequest} style={{height: 48, width: 48}} color="#FFFFFF"/>}/> 
+       <AppBar title="Countdown" showMenuIconButton={false} /> 
        <Dialog title="Coming Soon" open={this.state.dopen} onRequestClose={this.handleRequest} actions={[<RaisedButton label="Close" secondary={true} style={{margin:12}} onTouchTap={this.handleRequest}/>, <RaisedButton label="Add" primary={true} style={{margin:12}} onTouchTap={this.handleUpdate}/>]}>
        <TextField hintText="Type here..." floatingLabelText="Name of Event" fullWidth={true} />
        <DatePicker minDate = {this.state.minD} locale="en-US" hintText="Date"/> at <TimePicker hintText="Time"/>
