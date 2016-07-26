@@ -42,9 +42,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/*!*************************************!*\
-  !*** ./src/Countdown/Countdown.jsx ***!
-  \*************************************/
+/*!***************************************!*\
+  !*** ./src/Countdown/MyCountdown.jsx ***!
+  \***************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -103,7 +103,7 @@
 	  },
 	  fontFamily: 'Roboto, sans-serif',
 	  palette: {
-	    primary1Color: "#CF5300",
+	    primary1Color: "#1E3456",
 	    primary2Color: "#CF5300",
 	    primary3Color: _colors.indigo300,
 	    accent1Color: "#7C3100",
@@ -119,12 +119,12 @@
 	    shadowColor: _colors.fullBlack
 	  }
 	});
-	var edata = [{ title: "First Day of School", date: "1472043600000" }, { title: "Mooov-In", date: "1471608000000" }, { title: "ALEKS Due", date: "1471928340000" }, { title: "Girls Rush", date: "1471302000000" }, { title: "First Home Football Game", date: "1473031800000" }];
+	var edata = [{ title: "First Day of School", date: "1472054400000" }, { title: "Mooov-In", date: "1471649400000" }, { title: "Camp Texas", date: "1470924000000" }, { title: "ALEKS Due", date: "1471928340000" }, { title: "UGS Leadership Summit", date: "1471874400000" }, { title: "First Home Football Game", date: "1473031800000" }];
 	var k = 0;
 	var handleChange = function handleChange() {
 	  console.log("Sup");
 	};
-	var Count = function Count() {
+	var MyCount = function MyCount() {
 	  var f = edata.map(function (picture) {
 	    k = k + 1;
 	    return _react2.default.createElement(_Counter2.default, { title: picture.title, date: picture.date, key: k });
@@ -149,7 +149,7 @@
 	  );
 	};
 	
-	_reactDom2.default.render(_react2.default.createElement(Count, null), document.getElementById('count'));
+	_reactDom2.default.render(_react2.default.createElement(MyCount, null), document.getElementById('mycount'));
 
 /***/ },
 /* 1 */
@@ -60304,4 +60304,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=countdown.bundle.js.map
+//# sourceMappingURL=mycountdown.bundle.js.map

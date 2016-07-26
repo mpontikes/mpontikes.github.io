@@ -10,7 +10,8 @@ var config = {
     slowagram: APP_DIR + '/Slowagram/Slowagram.jsx',
     pevents: APP_DIR + '/PEvents/PEvents.jsx',
     test: APP_DIR + '/Testing/Test.jsx',
-    countdown: APP_DIR + '/Countdown/Countdown.jsx'
+    countdown: APP_DIR + '/Countdown/Countdown.jsx',
+    mycountdown: APP_DIR + '/Countdown/MyCountdown.jsx'
   },
   module : {
     loaders : [
