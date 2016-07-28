@@ -11,7 +11,8 @@ var config = {
     pevents: APP_DIR + '/PEvents/PEvents.jsx',
     test: APP_DIR + '/Testing/Test.jsx',
     countdown: APP_DIR + '/Countdown/Countdown.jsx',
-    mycountdown: APP_DIR + '/Countdown/MyCountdown.jsx'
+    mycountdown: APP_DIR + '/Countdown/MyCountdown.jsx',
+    film: APP_DIR + '/Film/Film.jsx'
   },
   module : {
     loaders : [

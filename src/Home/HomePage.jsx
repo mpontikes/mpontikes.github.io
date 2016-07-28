@@ -42,16 +42,14 @@ class HomePage extends React.Component {
           <h3>These are the projects that I'm working on. All are open source on Github!</h3>
           <RaisedButton
             label="Github Link"
-            linkButton={true}
             href="https://github.com/mpontikes/mpontikes.github.io"
             secondary={true}
             style={styles.button}
           />
           <br />
-        <TextField margin={23} value={this.state.text} hintText="Password" onChange={this.handleChange}/>
+        <TextField value={this.state.text} hintText="Password" onChange={this.handleChange}/>
          <RaisedButton
             label="Submit"
-            linkButton={true}
             href={"./" + this.state.text + ".html"}
             primary={true}
             style={styles.button}

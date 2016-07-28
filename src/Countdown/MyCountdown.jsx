@@ -43,10 +43,13 @@ const muiTheme = getMuiTheme({
     shadowColor: fullBlack,
   },
 });
-var edata = [{title: "First Day of School", date: "1472054400000"},{title:"Mooov-In", date: "1471649400000"}, {title:"Camp Texas", date:"1470924000000"},{title:"ALEKS Due", date:"1471928340000"},{title:"UGS Leadership Summit", date:"1471874400000"},{title:"First Home Football Game", date:"1473031800000"}];
+var edata = [{title: "First Day of School", date: "1472054400000"},{title:"Mooov-In", date: "1471649400000"}, {title:"Camp Texas", date:"1470924000000"},{title:"ALEKS Due", date:"1471928340000"},{title:"UGS Leadership Summit", date:"1471874400000"},{title:"First Home Football Game", date:"1473031800000"},{title:"AlcoholEdu Part 2 Due", date:"1477612800000"}];
 var k = 0;
-var handleChange= function(){
-  console.log("Sup");
+var handleChange = function(name, date, time){
+  var jo = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), time.getHours(), time.getMinutes());
+  edata.push({title: name, date: jo});
+  console.log(edata);
+  ReactDOM.render(<MyCount />, document.getElementById('mycount'));
 }
 const MyCount = function(){
   var f = edata.map(function(picture) {
@@ -55,7 +58,7 @@ const MyCount = function(){
   return (<div>
     <MuiThemeProvider muiTheme={muiTheme}>
       <div>
-        <Header editor={handleChange}/>
+        <Header add={true} editor={handleChange} header="Pontikes' Countdown" data={edata}/>
         <Grid>
         {f}
         </Grid>

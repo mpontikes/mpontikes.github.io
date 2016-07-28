@@ -26,7 +26,6 @@ class ProjectCard extends React.Component {
 			<h3> {this.props.dec} </h3>
 			<RaisedButton
             label="Go"
-            linkButton={true}
             href={this.props.url}
             secondary={true}
             style={styles.button}
