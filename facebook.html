@@ -15,25 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
   </head>
   <body style="background-color: #C5CAE9">
-  <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '533858256799292',
-      xfbml      : true,
-      version    : 'v2.7'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<script>
-  // This is called with the results from from FB.getLoginStatus().
+    <script>
+      // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -67,7 +50,7 @@
 
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '{your-app-id}',
+    appId      : '533858256799292',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -111,9 +94,8 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
-</script>
-
-<!--
+    </script>
+    <!--
   Below we include the Login Button social plugin. This button uses
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
@@ -123,13 +105,5 @@
 </fb:login-button>
 
 <div id="status">
-</div>
-
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
   </body>
 </html>
