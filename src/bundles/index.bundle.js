@@ -77,7 +77,7 @@
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _HomePage = __webpack_require__(/*! ./HomePage.jsx */ 647);
+	var _HomePage = __webpack_require__(/*! ./HomePage.jsx */ 652);
 	
 	var _HomePage2 = _interopRequireDefault(_HomePage);
 	
@@ -34171,7 +34171,12 @@
 /* 644 */,
 /* 645 */,
 /* 646 */,
-/* 647 */
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */,
+/* 652 */
 /*!*******************************!*\
   !*** ./src/Home/HomePage.jsx ***!
   \*******************************/
@@ -34205,7 +34210,7 @@
 	
 	var _FontIcon2 = _interopRequireDefault(_FontIcon);
 	
-	var _ProjectCard = __webpack_require__(/*! ./ProjectCard.jsx */ 648);
+	var _ProjectCard = __webpack_require__(/*! ./ProjectCard.jsx */ 653);
 	
 	var _ProjectCard2 = _interopRequireDefault(_ProjectCard);
 	
@@ -34300,7 +34305,7 @@
 	exports.default = HomePage;
 
 /***/ },
-/* 648 */
+/* 653 */
 /*!**********************************!*\
   !*** ./src/Home/ProjectCard.jsx ***!
   \**********************************/

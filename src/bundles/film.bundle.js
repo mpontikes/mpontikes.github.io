@@ -75,7 +75,7 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 338);
 	
-	var _Header = __webpack_require__(/*! ./Header.jsx */ 783);
+	var _Header = __webpack_require__(/*! ./Header.jsx */ 647);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
@@ -51157,92 +51157,114 @@
 /* 644 */,
 /* 645 */,
 /* 646 */,
-/* 647 */,
-/* 648 */,
-/* 649 */,
-/* 650 */,
-/* 651 */,
-/* 652 */,
-/* 653 */,
-/* 654 */,
-/* 655 */,
-/* 656 */,
-/* 657 */,
-/* 658 */,
-/* 659 */,
-/* 660 */,
-/* 661 */,
-/* 662 */,
-/* 663 */,
-/* 664 */,
-/* 665 */,
-/* 666 */,
-/* 667 */,
-/* 668 */,
-/* 669 */,
-/* 670 */,
-/* 671 */,
-/* 672 */,
-/* 673 */,
-/* 674 */,
-/* 675 */,
-/* 676 */,
-/* 677 */,
-/* 678 */,
-/* 679 */,
-/* 680 */,
-/* 681 */,
-/* 682 */,
-/* 683 */,
-/* 684 */,
-/* 685 */,
-/* 686 */,
-/* 687 */,
-/* 688 */,
-/* 689 */,
-/* 690 */,
-/* 691 */,
-/* 692 */,
-/* 693 */,
-/* 694 */,
-/* 695 */,
-/* 696 */,
-/* 697 */,
-/* 698 */,
-/* 699 */,
-/* 700 */,
-/* 701 */,
-/* 702 */,
-/* 703 */,
-/* 704 */,
-/* 705 */,
-/* 706 */,
-/* 707 */,
-/* 708 */,
-/* 709 */,
-/* 710 */,
-/* 711 */,
-/* 712 */,
-/* 713 */,
-/* 714 */,
-/* 715 */,
-/* 716 */,
-/* 717 */,
-/* 718 */,
-/* 719 */,
-/* 720 */,
-/* 721 */,
-/* 722 */,
-/* 723 */,
-/* 724 */,
-/* 725 */,
-/* 726 */,
-/* 727 */,
-/* 728 */,
-/* 729 */,
-/* 730 */,
-/* 731 */,
-/* 732 */
+/* 647 */
+/*!*****************************!*\
+  !*** ./src/Film/Header.jsx ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Paper = __webpack_require__(/*! material-ui/Paper */ 592);
+	
+	var _Paper2 = _interopRequireDefault(_Paper);
+	
+	var _LinearProgress = __webpack_require__(/*! material-ui/LinearProgress */ 648);
+	
+	var _LinearProgress2 = _interopRequireDefault(_LinearProgress);
+	
+	var _RaisedButton = __webpack_require__(/*! material-ui/RaisedButton */ 601);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
+	var _Dialog = __webpack_require__(/*! material-ui/Dialog */ 595);
+	
+	var _Dialog2 = _interopRequireDefault(_Dialog);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Header = function (_React$Component) {
+	  _inherits(Header, _React$Component);
+	
+	  function Header(props) {
+	    _classCallCheck(this, Header);
+	
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Header).call(this, props));
+	
+	    _this.state = {
+	      menuopen: false
+	    };
+	    _this.handleMenu = _this.handleMenu.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(Header, [{
+	    key: 'handleMenu',
+	    value: function handleMenu() {
+	      this.setState({ menuopen: !this.state.menuopen });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          _Paper2.default,
+	          { style: { margin: 25, padding: 25, textAlign: 'center' } },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            this.props.title
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(_LinearProgress2.default, { mode: 'determinate', value: this.props.percent }),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            this.props.percent,
+	            '%'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Annoucments'
+	          ),
+	          this.props.an,
+	          _react2.default.createElement(_RaisedButton2.default, { label: 'Staff', primary: true, onTouchTap: this.handleMenu }),
+	          _react2.default.createElement(
+	            _Dialog2.default,
+	            { title: 'Staff', open: this.state.menuopen, bodyStyle: { color: "#000000" }, onRequestClose: this.handleMenu, actions: _react2.default.createElement(_RaisedButton2.default, { label: 'Close', primary: true, onTouchTap: this.handleMenu }) },
+	            this.props.staff
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Header;
+	}(_react2.default.Component);
+	
+	exports.default = Header;
+
+/***/ },
+/* 648 */
 /*!***********************************************!*\
   !*** ./~/material-ui/LinearProgress/index.js ***!
   \***********************************************/
@@ -51255,7 +51277,7 @@
 	});
 	exports.default = undefined;
 	
-	var _LinearProgress = __webpack_require__(/*! ./LinearProgress */ 733);
+	var _LinearProgress = __webpack_require__(/*! ./LinearProgress */ 649);
 	
 	var _LinearProgress2 = _interopRequireDefault(_LinearProgress);
 	
@@ -51264,7 +51286,7 @@
 	exports.default = _LinearProgress2.default;
 
 /***/ },
-/* 733 */
+/* 649 */
 /*!********************************************************!*\
   !*** ./~/material-ui/LinearProgress/LinearProgress.js ***!
   \********************************************************/
@@ -51483,162 +51505,6 @@
 	  muiTheme: _react.PropTypes.object.isRequired
 	};
 	exports.default = LinearProgress;
-
-/***/ },
-/* 734 */,
-/* 735 */,
-/* 736 */,
-/* 737 */,
-/* 738 */,
-/* 739 */,
-/* 740 */,
-/* 741 */,
-/* 742 */,
-/* 743 */,
-/* 744 */,
-/* 745 */,
-/* 746 */,
-/* 747 */,
-/* 748 */,
-/* 749 */,
-/* 750 */,
-/* 751 */,
-/* 752 */,
-/* 753 */,
-/* 754 */,
-/* 755 */,
-/* 756 */,
-/* 757 */,
-/* 758 */,
-/* 759 */,
-/* 760 */,
-/* 761 */,
-/* 762 */,
-/* 763 */,
-/* 764 */,
-/* 765 */,
-/* 766 */,
-/* 767 */,
-/* 768 */,
-/* 769 */,
-/* 770 */,
-/* 771 */,
-/* 772 */,
-/* 773 */,
-/* 774 */,
-/* 775 */,
-/* 776 */,
-/* 777 */,
-/* 778 */,
-/* 779 */,
-/* 780 */,
-/* 781 */,
-/* 782 */,
-/* 783 */
-/*!*****************************!*\
-  !*** ./src/Film/Header.jsx ***!
-  \*****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _Paper = __webpack_require__(/*! material-ui/Paper */ 592);
-	
-	var _Paper2 = _interopRequireDefault(_Paper);
-	
-	var _LinearProgress = __webpack_require__(/*! material-ui/LinearProgress */ 732);
-	
-	var _LinearProgress2 = _interopRequireDefault(_LinearProgress);
-	
-	var _RaisedButton = __webpack_require__(/*! material-ui/RaisedButton */ 601);
-	
-	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
-	
-	var _Dialog = __webpack_require__(/*! material-ui/Dialog */ 595);
-	
-	var _Dialog2 = _interopRequireDefault(_Dialog);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Header = function (_React$Component) {
-	  _inherits(Header, _React$Component);
-	
-	  function Header(props) {
-	    _classCallCheck(this, Header);
-	
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Header).call(this, props));
-	
-	    _this.state = {
-	      menuopen: false
-	    };
-	    _this.handleMenu = _this.handleMenu.bind(_this);
-	    return _this;
-	  }
-	
-	  _createClass(Header, [{
-	    key: 'handleMenu',
-	    value: function handleMenu() {
-	      this.setState({ menuopen: !this.state.menuopen });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          _Paper2.default,
-	          { style: { margin: 25, padding: 25, textAlign: 'center' } },
-	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            this.props.title
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(_LinearProgress2.default, { mode: 'determinate', value: this.props.percent }),
-	          _react2.default.createElement(
-	            'h4',
-	            null,
-	            this.props.percent,
-	            '%'
-	          ),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Annoucments'
-	          ),
-	          this.props.an,
-	          _react2.default.createElement(_RaisedButton2.default, { label: 'Staff', primary: true, onTouchTap: this.handleMenu }),
-	          _react2.default.createElement(
-	            _Dialog2.default,
-	            { title: 'Staff', open: this.state.menuopen, bodyStyle: { color: "#000000" }, onRequestClose: this.handleMenu, actions: _react2.default.createElement(_RaisedButton2.default, { label: 'Close', primary: true, onTouchTap: this.handleMenu }) },
-	            this.props.staff
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Header;
-	}(_react2.default.Component);
-	
-	exports.default = Header;
 
 /***/ }
 /******/ ]);

@@ -73,7 +73,7 @@
 	
 	var _colorManipulator = __webpack_require__(/*! material-ui/utils/colorManipulator */ 290);
 	
-	var _MainPage = __webpack_require__(/*! ./MainPage.jsx */ 689);
+	var _MainPage = __webpack_require__(/*! ./MainPage.jsx */ 694);
 	
 	var _MainPage2 = _interopRequireDefault(_MainPage);
 	
@@ -97,7 +97,7 @@
 	  },
 	  fontFamily: 'Roboto, sans-serif',
 	  palette: {
-	    primary1Color: "#1B5E20",
+	    primary1Color: _colors.indigo500,
 	    primary2Color: _colors.indigo700,
 	    primary3Color: _colors.indigo300,
 	    accent1Color: _colors.green700,
@@ -41010,7 +41010,12 @@
 /* 656 */,
 /* 657 */,
 /* 658 */,
-/* 659 */
+/* 659 */,
+/* 660 */,
+/* 661 */,
+/* 662 */,
+/* 663 */,
+/* 664 */
 /*!***************************************!*\
   !*** ./~/material-ui/Drawer/index.js ***!
   \***************************************/
@@ -41023,7 +41028,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Drawer = __webpack_require__(/*! ./Drawer */ 660);
+	var _Drawer = __webpack_require__(/*! ./Drawer */ 665);
 	
 	var _Drawer2 = _interopRequireDefault(_Drawer);
 	
@@ -41032,7 +41037,7 @@
 	exports.default = _Drawer2.default;
 
 /***/ },
-/* 660 */
+/* 665 */
 /*!****************************************!*\
   !*** ./~/material-ui/Drawer/Drawer.js ***!
   \****************************************/
@@ -41489,7 +41494,7 @@
 	exports.default = Drawer;
 
 /***/ },
-/* 661 */
+/* 666 */
 /*!*****************************************!*\
   !*** ./~/material-ui/MenuItem/index.js ***!
   \*****************************************/
@@ -41502,7 +41507,7 @@
 	});
 	exports.default = undefined;
 	
-	var _MenuItem = __webpack_require__(/*! ./MenuItem */ 662);
+	var _MenuItem = __webpack_require__(/*! ./MenuItem */ 667);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
@@ -41511,7 +41516,7 @@
 	exports.default = _MenuItem2.default;
 
 /***/ },
-/* 662 */
+/* 667 */
 /*!********************************************!*\
   !*** ./~/material-ui/MenuItem/MenuItem.js ***!
   \********************************************/
@@ -41547,15 +41552,15 @@
 	
 	var _Popover2 = _interopRequireDefault(_Popover);
 	
-	var _check = __webpack_require__(/*! ../svg-icons/navigation/check */ 663);
+	var _check = __webpack_require__(/*! ../svg-icons/navigation/check */ 668);
 	
 	var _check2 = _interopRequireDefault(_check);
 	
-	var _ListItem = __webpack_require__(/*! ../List/ListItem */ 664);
+	var _ListItem = __webpack_require__(/*! ../List/ListItem */ 669);
 	
 	var _ListItem2 = _interopRequireDefault(_ListItem);
 	
-	var _Menu = __webpack_require__(/*! ../Menu/Menu */ 671);
+	var _Menu = __webpack_require__(/*! ../Menu/Menu */ 676);
 	
 	var _Menu2 = _interopRequireDefault(_Menu);
 	
@@ -41875,7 +41880,7 @@
 	exports.default = MenuItem;
 
 /***/ },
-/* 663 */
+/* 668 */
 /*!*****************************************************!*\
   !*** ./~/material-ui/svg-icons/navigation/check.js ***!
   \*****************************************************/
@@ -41915,7 +41920,7 @@
 	exports.default = NavigationCheck;
 
 /***/ },
-/* 664 */
+/* 669 */
 /*!****************************************!*\
   !*** ./~/material-ui/List/ListItem.js ***!
   \****************************************/
@@ -41961,15 +41966,15 @@
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _expandLess = __webpack_require__(/*! ../svg-icons/navigation/expand-less */ 665);
+	var _expandLess = __webpack_require__(/*! ../svg-icons/navigation/expand-less */ 670);
 	
 	var _expandLess2 = _interopRequireDefault(_expandLess);
 	
-	var _expandMore = __webpack_require__(/*! ../svg-icons/navigation/expand-more */ 666);
+	var _expandMore = __webpack_require__(/*! ../svg-icons/navigation/expand-more */ 671);
 	
 	var _expandMore2 = _interopRequireDefault(_expandMore);
 	
-	var _NestedList = __webpack_require__(/*! ./NestedList */ 667);
+	var _NestedList = __webpack_require__(/*! ./NestedList */ 672);
 	
 	var _NestedList2 = _interopRequireDefault(_NestedList);
 	
@@ -42586,7 +42591,7 @@
 	exports.default = ListItem;
 
 /***/ },
-/* 665 */
+/* 670 */
 /*!***********************************************************!*\
   !*** ./~/material-ui/svg-icons/navigation/expand-less.js ***!
   \***********************************************************/
@@ -42626,7 +42631,7 @@
 	exports.default = NavigationExpandLess;
 
 /***/ },
-/* 666 */
+/* 671 */
 /*!***********************************************************!*\
   !*** ./~/material-ui/svg-icons/navigation/expand-more.js ***!
   \***********************************************************/
@@ -42666,7 +42671,7 @@
 	exports.default = NavigationExpandMore;
 
 /***/ },
-/* 667 */
+/* 672 */
 /*!******************************************!*\
   !*** ./~/material-ui/List/NestedList.js ***!
   \******************************************/
@@ -42688,7 +42693,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _List = __webpack_require__(/*! ./List */ 668);
+	var _List = __webpack_require__(/*! ./List */ 673);
 	
 	var _List2 = _interopRequireDefault(_List);
 	
@@ -42756,7 +42761,7 @@
 	exports.default = NestedList;
 
 /***/ },
-/* 668 */
+/* 673 */
 /*!************************************!*\
   !*** ./~/material-ui/List/List.js ***!
   \************************************/
@@ -42784,7 +42789,7 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _Subheader = __webpack_require__(/*! ../Subheader */ 669);
+	var _Subheader = __webpack_require__(/*! ../Subheader */ 674);
 	
 	var _Subheader2 = _interopRequireDefault(_Subheader);
 	
@@ -42904,7 +42909,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
-/* 669 */
+/* 674 */
 /*!******************************************!*\
   !*** ./~/material-ui/Subheader/index.js ***!
   \******************************************/
@@ -42917,7 +42922,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Subheader = __webpack_require__(/*! ./Subheader */ 670);
+	var _Subheader = __webpack_require__(/*! ./Subheader */ 675);
 	
 	var _Subheader2 = _interopRequireDefault(_Subheader);
 	
@@ -42926,7 +42931,7 @@
 	exports.default = _Subheader2.default;
 
 /***/ },
-/* 670 */
+/* 675 */
 /*!**********************************************!*\
   !*** ./~/material-ui/Subheader/Subheader.js ***!
   \**********************************************/
@@ -43014,7 +43019,7 @@
 	exports.default = Subheader;
 
 /***/ },
-/* 671 */
+/* 676 */
 /*!************************************!*\
   !*** ./~/material-ui/Menu/Menu.js ***!
   \************************************/
@@ -43046,7 +43051,7 @@
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
-	var _ClickAwayListener = __webpack_require__(/*! ../internal/ClickAwayListener */ 672);
+	var _ClickAwayListener = __webpack_require__(/*! ../internal/ClickAwayListener */ 677);
 	
 	var _ClickAwayListener2 = _interopRequireDefault(_ClickAwayListener);
 	
@@ -43066,7 +43071,7 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _List = __webpack_require__(/*! ../List/List */ 668);
+	var _List = __webpack_require__(/*! ../List/List */ 673);
 	
 	var _List2 = _interopRequireDefault(_List);
 	
@@ -43078,7 +43083,7 @@
 	
 	var _warning2 = _interopRequireDefault(_warning);
 	
-	var _menuUtils = __webpack_require__(/*! ./menuUtils */ 673);
+	var _menuUtils = __webpack_require__(/*! ./menuUtils */ 678);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -43742,7 +43747,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 3)))
 
 /***/ },
-/* 672 */
+/* 677 */
 /*!*****************************************************!*\
   !*** ./~/material-ui/internal/ClickAwayListener.js ***!
   \*****************************************************/
@@ -43864,7 +43869,7 @@
 	exports.default = ClickAwayListener;
 
 /***/ },
-/* 673 */
+/* 678 */
 /*!*****************************************!*\
   !*** ./~/material-ui/Menu/menuUtils.js ***!
   \*****************************************/
@@ -43905,11 +43910,6 @@
 	}();
 
 /***/ },
-/* 674 */,
-/* 675 */,
-/* 676 */,
-/* 677 */,
-/* 678 */,
 /* 679 */,
 /* 680 */,
 /* 681 */,
@@ -43920,7 +43920,12 @@
 /* 686 */,
 /* 687 */,
 /* 688 */,
-/* 689 */
+/* 689 */,
+/* 690 */,
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */
 /*!************************************!*\
   !*** ./src/Slowagram/MainPage.jsx ***!
   \************************************/
@@ -43938,11 +43943,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _SiteHeader = __webpack_require__(/*! ./SiteHeader.jsx */ 690);
+	var _SiteHeader = __webpack_require__(/*! ./SiteHeader.jsx */ 695);
 	
 	var _SiteHeader2 = _interopRequireDefault(_SiteHeader);
 	
-	var _PictureCard = __webpack_require__(/*! ./PictureCard.jsx */ 705);
+	var _PictureCard = __webpack_require__(/*! ./PictureCard.jsx */ 710);
 	
 	var _PictureCard2 = _interopRequireDefault(_PictureCard);
 	
@@ -44035,7 +44040,7 @@
 	exports.default = MainPage;
 
 /***/ },
-/* 690 */
+/* 695 */
 /*!**************************************!*\
   !*** ./src/Slowagram/SiteHeader.jsx ***!
   \**************************************/
@@ -44057,7 +44062,7 @@
 	
 	var _AppBar2 = _interopRequireDefault(_AppBar);
 	
-	var _addAPhoto = __webpack_require__(/*! material-ui/svg-icons/image/add-a-photo */ 691);
+	var _addAPhoto = __webpack_require__(/*! material-ui/svg-icons/image/add-a-photo */ 696);
 	
 	var _addAPhoto2 = _interopRequireDefault(_addAPhoto);
 	
@@ -44065,15 +44070,15 @@
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _Drawer = __webpack_require__(/*! material-ui/Drawer */ 659);
+	var _Drawer = __webpack_require__(/*! material-ui/Drawer */ 664);
 	
 	var _Drawer2 = _interopRequireDefault(_Drawer);
 	
-	var _MenuItem = __webpack_require__(/*! material-ui/MenuItem */ 661);
+	var _MenuItem = __webpack_require__(/*! material-ui/MenuItem */ 666);
 	
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 	
-	var _Card = __webpack_require__(/*! material-ui/Card */ 692);
+	var _Card = __webpack_require__(/*! material-ui/Card */ 697);
 	
 	var _TextField = __webpack_require__(/*! material-ui/TextField */ 630);
 	
@@ -44093,7 +44098,7 @@
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _UploadBox = __webpack_require__(/*! ./UploadBox.jsx */ 704);
+	var _UploadBox = __webpack_require__(/*! ./UploadBox.jsx */ 709);
 	
 	var _UploadBox2 = _interopRequireDefault(_UploadBox);
 	
@@ -44267,7 +44272,7 @@
 	exports.default = SiteHeader;
 
 /***/ },
-/* 691 */
+/* 696 */
 /*!******************************************************!*\
   !*** ./~/material-ui/svg-icons/image/add-a-photo.js ***!
   \******************************************************/
@@ -44307,7 +44312,7 @@
 	exports.default = ImageAddAPhoto;
 
 /***/ },
-/* 692 */
+/* 697 */
 /*!*************************************!*\
   !*** ./~/material-ui/Card/index.js ***!
   \*************************************/
@@ -44320,31 +44325,31 @@
 	});
 	exports.default = exports.CardExpandable = exports.CardActions = exports.CardText = exports.CardMedia = exports.CardTitle = exports.CardHeader = exports.Card = undefined;
 	
-	var _Card2 = __webpack_require__(/*! ./Card */ 693);
+	var _Card2 = __webpack_require__(/*! ./Card */ 698);
 	
 	var _Card3 = _interopRequireDefault(_Card2);
 	
-	var _CardHeader2 = __webpack_require__(/*! ./CardHeader */ 697);
+	var _CardHeader2 = __webpack_require__(/*! ./CardHeader */ 702);
 	
 	var _CardHeader3 = _interopRequireDefault(_CardHeader2);
 	
-	var _CardTitle2 = __webpack_require__(/*! ./CardTitle */ 700);
+	var _CardTitle2 = __webpack_require__(/*! ./CardTitle */ 705);
 	
 	var _CardTitle3 = _interopRequireDefault(_CardTitle2);
 	
-	var _CardMedia2 = __webpack_require__(/*! ./CardMedia */ 701);
+	var _CardMedia2 = __webpack_require__(/*! ./CardMedia */ 706);
 	
 	var _CardMedia3 = _interopRequireDefault(_CardMedia2);
 	
-	var _CardText2 = __webpack_require__(/*! ./CardText */ 702);
+	var _CardText2 = __webpack_require__(/*! ./CardText */ 707);
 	
 	var _CardText3 = _interopRequireDefault(_CardText2);
 	
-	var _CardActions2 = __webpack_require__(/*! ./CardActions */ 703);
+	var _CardActions2 = __webpack_require__(/*! ./CardActions */ 708);
 	
 	var _CardActions3 = _interopRequireDefault(_CardActions2);
 	
-	var _CardExpandable2 = __webpack_require__(/*! ./CardExpandable */ 694);
+	var _CardExpandable2 = __webpack_require__(/*! ./CardExpandable */ 699);
 	
 	var _CardExpandable3 = _interopRequireDefault(_CardExpandable2);
 	
@@ -44360,7 +44365,7 @@
 	exports.default = _Card3.default;
 
 /***/ },
-/* 693 */
+/* 698 */
 /*!************************************!*\
   !*** ./~/material-ui/Card/Card.js ***!
   \************************************/
@@ -44388,7 +44393,7 @@
 	
 	var _Paper2 = _interopRequireDefault(_Paper);
 	
-	var _CardExpandable = __webpack_require__(/*! ./CardExpandable */ 694);
+	var _CardExpandable = __webpack_require__(/*! ./CardExpandable */ 699);
 	
 	var _CardExpandable2 = _interopRequireDefault(_CardExpandable);
 	
@@ -44561,7 +44566,7 @@
 	exports.default = Card;
 
 /***/ },
-/* 694 */
+/* 699 */
 /*!**********************************************!*\
   !*** ./~/material-ui/Card/CardExpandable.js ***!
   \**********************************************/
@@ -44583,11 +44588,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _keyboardArrowUp = __webpack_require__(/*! ../svg-icons/hardware/keyboard-arrow-up */ 695);
+	var _keyboardArrowUp = __webpack_require__(/*! ../svg-icons/hardware/keyboard-arrow-up */ 700);
 	
 	var _keyboardArrowUp2 = _interopRequireDefault(_keyboardArrowUp);
 	
-	var _keyboardArrowDown = __webpack_require__(/*! ../svg-icons/hardware/keyboard-arrow-down */ 696);
+	var _keyboardArrowDown = __webpack_require__(/*! ../svg-icons/hardware/keyboard-arrow-down */ 701);
 	
 	var _keyboardArrowDown2 = _interopRequireDefault(_keyboardArrowDown);
 	
@@ -44654,7 +44659,7 @@
 	exports.default = CardExpandable;
 
 /***/ },
-/* 695 */
+/* 700 */
 /*!***************************************************************!*\
   !*** ./~/material-ui/svg-icons/hardware/keyboard-arrow-up.js ***!
   \***************************************************************/
@@ -44694,7 +44699,7 @@
 	exports.default = HardwareKeyboardArrowUp;
 
 /***/ },
-/* 696 */
+/* 701 */
 /*!*****************************************************************!*\
   !*** ./~/material-ui/svg-icons/hardware/keyboard-arrow-down.js ***!
   \*****************************************************************/
@@ -44734,7 +44739,7 @@
 	exports.default = HardwareKeyboardArrowDown;
 
 /***/ },
-/* 697 */
+/* 702 */
 /*!******************************************!*\
   !*** ./~/material-ui/Card/CardHeader.js ***!
   \******************************************/
@@ -44758,7 +44763,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Avatar = __webpack_require__(/*! ../Avatar */ 698);
+	var _Avatar = __webpack_require__(/*! ../Avatar */ 703);
 	
 	var _Avatar2 = _interopRequireDefault(_Avatar);
 	
@@ -44938,7 +44943,7 @@
 	exports.default = CardHeader;
 
 /***/ },
-/* 698 */
+/* 703 */
 /*!***************************************!*\
   !*** ./~/material-ui/Avatar/index.js ***!
   \***************************************/
@@ -44951,7 +44956,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Avatar = __webpack_require__(/*! ./Avatar */ 699);
+	var _Avatar = __webpack_require__(/*! ./Avatar */ 704);
 	
 	var _Avatar2 = _interopRequireDefault(_Avatar);
 	
@@ -44960,7 +44965,7 @@
 	exports.default = _Avatar2.default;
 
 /***/ },
-/* 699 */
+/* 704 */
 /*!****************************************!*\
   !*** ./~/material-ui/Avatar/Avatar.js ***!
   \****************************************/
@@ -45122,7 +45127,7 @@
 	exports.default = Avatar;
 
 /***/ },
-/* 700 */
+/* 705 */
 /*!*****************************************!*\
   !*** ./~/material-ui/Card/CardTitle.js ***!
   \*****************************************/
@@ -45280,7 +45285,7 @@
 	exports.default = CardTitle;
 
 /***/ },
-/* 701 */
+/* 706 */
 /*!*****************************************!*\
   !*** ./~/material-ui/Card/CardMedia.js ***!
   \*****************************************/
@@ -45473,7 +45478,7 @@
 	exports.default = CardMedia;
 
 /***/ },
-/* 702 */
+/* 707 */
 /*!****************************************!*\
   !*** ./~/material-ui/Card/CardText.js ***!
   \****************************************/
@@ -45575,7 +45580,7 @@
 	exports.default = CardText;
 
 /***/ },
-/* 703 */
+/* 708 */
 /*!*******************************************!*\
   !*** ./~/material-ui/Card/CardActions.js ***!
   \*******************************************/
@@ -45682,7 +45687,7 @@
 	exports.default = CardActions;
 
 /***/ },
-/* 704 */
+/* 709 */
 /*!*************************************!*\
   !*** ./src/Slowagram/UploadBox.jsx ***!
   \*************************************/
@@ -45784,7 +45789,7 @@
 	exports.default = UploadBox;
 
 /***/ },
-/* 705 */
+/* 710 */
 /*!***************************************!*\
   !*** ./src/Slowagram/PictureCard.jsx ***!
   \***************************************/
@@ -45802,17 +45807,17 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Card = __webpack_require__(/*! material-ui/Card */ 692);
+	var _Card = __webpack_require__(/*! material-ui/Card */ 697);
 	
 	var _RaisedButton = __webpack_require__(/*! material-ui/RaisedButton */ 601);
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
-	var _thumbUp = __webpack_require__(/*! material-ui/svg-icons/action/thumb-up */ 706);
+	var _thumbUp = __webpack_require__(/*! material-ui/svg-icons/action/thumb-up */ 711);
 	
 	var _thumbUp2 = _interopRequireDefault(_thumbUp);
 	
-	var _chat = __webpack_require__(/*! material-ui/svg-icons/communication/chat */ 707);
+	var _chat = __webpack_require__(/*! material-ui/svg-icons/communication/chat */ 712);
 	
 	var _chat2 = _interopRequireDefault(_chat);
 	
@@ -45828,7 +45833,7 @@
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _CommentBox = __webpack_require__(/*! ./CommentBox.jsx */ 708);
+	var _CommentBox = __webpack_require__(/*! ./CommentBox.jsx */ 713);
 	
 	var _CommentBox2 = _interopRequireDefault(_CommentBox);
 	
@@ -45932,7 +45937,7 @@
 	exports.default = PictureCard;
 
 /***/ },
-/* 706 */
+/* 711 */
 /*!****************************************************!*\
   !*** ./~/material-ui/svg-icons/action/thumb-up.js ***!
   \****************************************************/
@@ -45972,7 +45977,7 @@
 	exports.default = ActionThumbUp;
 
 /***/ },
-/* 707 */
+/* 712 */
 /*!*******************************************************!*\
   !*** ./~/material-ui/svg-icons/communication/chat.js ***!
   \*******************************************************/
@@ -46012,7 +46017,7 @@
 	exports.default = CommunicationChat;
 
 /***/ },
-/* 708 */
+/* 713 */
 /*!**************************************!*\
   !*** ./src/Slowagram/CommentBox.jsx ***!
   \**************************************/
@@ -46030,7 +46035,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Card = __webpack_require__(/*! material-ui/Card */ 692);
+	var _Card = __webpack_require__(/*! material-ui/Card */ 697);
 	
 	var _TextField = __webpack_require__(/*! material-ui/TextField */ 630);
 	
