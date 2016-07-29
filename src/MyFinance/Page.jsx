@@ -5,9 +5,6 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
 import {grey50} from 'material-ui/styles/colors';
-import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
-import Divider from 'material-ui/Divider';
 import ActionBuild from 'material-ui/svg-icons/action/build'
 
 class Page extends React.Component {
@@ -27,6 +24,7 @@ class Page extends React.Component {
     return (
       <div>
         <AppBar showMenuIconButton={false} title="MyFinance" iconElementRight= {<IconButton onTouchTap={this.handleMenu}><ActionBuild /></IconButton>}/>
+        
       </div>	
       );
   }
