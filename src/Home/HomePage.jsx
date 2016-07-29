@@ -56,7 +56,9 @@ class HomePage extends React.Component {
           />
       </Paper>
       <ProjectCard title="Slowagram" url="./slowagram.html" dec="A parody of Instagram. Created using React components" disable={false} />
-      <ProjectCard title="PEvents" url="./ptix.html" dec="A place to show events. Created using React and Redux components" disable/>
+      <ProjectCard title="PEvents" url="./pevents.html" dec="A place to show events. Created using React and Redux components" disable={false} />
+      <ProjectCard title="Countdown" url="./countdown.html" dec="Countdown to all kinds of campus events" disable={false} />
+      <ProjectCard title="MyFinance" url="./finance.html" dec="A web app used to keep spending on track" disable /> 
     </div>	
     );
   }

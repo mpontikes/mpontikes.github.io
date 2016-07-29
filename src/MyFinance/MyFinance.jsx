@@ -5,8 +5,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import {indigo500, indigo700, grey100, indigo300, grey300, grey400, grey500,pinkA200,white, darkBlack, fullBlack, cyan500, green700} from 'material-ui/styles/colors';
 import {fade} from 'material-ui/utils/colorManipulator';
-
-import MainPage from './MainPage.jsx';
+import TextField from 'material-ui/TextField';
+import Page from './Page.jsx'
 
 injectTapEventPlugin();
 
@@ -43,14 +43,12 @@ const muiTheme = getMuiTheme({
   },
 });
 
-const App = () => (
+const Sup = () => (
   <div>
     <MuiThemeProvider muiTheme={muiTheme}>
-      <MainPage />
+      <Page />
     </MuiThemeProvider>
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('app'));
-
-
+ReactDOM.render(<Sup />, document.getElementById('sup'));

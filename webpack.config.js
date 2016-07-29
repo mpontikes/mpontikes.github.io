@@ -12,7 +12,8 @@ var config = {
     test: APP_DIR + '/Testing/Test.jsx',
     countdown: APP_DIR + '/Countdown/Countdown.jsx',
     mycountdown: APP_DIR + '/Countdown/MyCountdown.jsx',
-    film: APP_DIR + '/Film/Film.jsx'
+    film: APP_DIR + '/Film/Film.jsx',
+    finance: APP_DIR + '/MyFinance/MyFinance.jsx'
   },
   module : {
     loaders : [

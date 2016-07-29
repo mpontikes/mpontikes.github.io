@@ -1,0 +1,42 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content= "summary"/>
+    <meta name="twitter:site" content="@m1chael62" />
+    <meta name="twitter:creator" content="@m1chael62" />
+    <meta property="og:url" content="mpontikes.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Facebook Info Page" />
+    <meta property="og:description" content="The page is ment for users to see what info is given to developers and serves as a reminder to never log into a Facebook App they don't trust" />
+    <meta property="og:site_name" content="Pontikes' Projects">
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/709013243583279105/WNFfT9UX.jpg">
+    <title>Facebook Info Page</title>
+    <link rel="shortcut icon" href="favicon.png?" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  </head>
+  <body style="background-color: #C5CAE9">
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '533858256799292',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+  </body>
+</html>

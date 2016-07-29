@@ -37,19 +37,22 @@ This is a new site
   title: "An Event",
   when: "At Sometime",
   where: "At Someplace"
-{/* Edit Writing Events Above */}},{
+// Edit Writing Events Above 
+},{
 
-{/* Edit Filmming Events Below */}
+// Edit Filmming Events Below
   title: "An Event",
   when: "At Sometime",
   where: "At Someplace"
-{/* Edit Flimming Events Above */}},{
+// Edit Flimming Events Above 
+},{
 
-{/* Edit Editting Events Below */}
+// Edit Editting Events Below
   title: "An Event",
   when: "At Sometime",
   where: "At Someplace"
-{/* Edit Editting Events Above */}}]; const staff=<div>
+// Edit Editting Events Above
+}]; const staff=<div>
 
 {/* Edit Staff List Below */}
 <p>Michael Pontikes </p>
@@ -57,7 +60,7 @@ This is a new site
 
 </div>;
 
-{/* END OF WEBSITE DATA (DO NOT EDIT PAST HERE!!) */}
+// END OF WEBSITE DATA (DO NOT EDIT PAST HERE!!)
 
 injectTapEventPlugin();
 
@@ -100,6 +103,7 @@ const Film = function(){
     <MuiThemeProvider muiTheme={muiTheme}>
       <div>
         <Header title="Freshmen Film" staff={staff} percent={progress.gen} an={annouce}/>
+        {/*
         <ProgressBox type="Writing" percent={progress.write} />
         <ProgressBox type="Filmming" percent={progress.film} />
         <ProgressBox type="Editing" percent={progress.post} />
@@ -107,6 +111,7 @@ const Film = function(){
         <EventBox type="Writing" data={events[1]} />
         <EventBox type="Filmming" data={events[2]} />
         <EventBox type="Editing" data={events[3]} />
+      */}
       </div>  
     </MuiThemeProvider>
   </div>);
