@@ -27,7 +27,7 @@ const muiTheme = getMuiTheme({
   fontFamily: 'Roboto, sans-serif',
   palette: {
     primary1Color: "#1B5E20",
-    primary2Color: indigo700,
+    primary2Color: "#1B5E20",
     primary3Color: "#C8E6C9",
     accent1Color: green700,
     accent2Color: grey100,
@@ -37,7 +37,7 @@ const muiTheme = getMuiTheme({
     canvasColor: white,
     borderColor: grey300,
     disabledColor: fade(darkBlack, 0.3),
-    pickerHeaderColor: cyan500,
+    pickerHeaderColor: "#1B5E20",
     clockCircleColor: fade(darkBlack, 0.07),
     shadowColor: fullBlack,
   },

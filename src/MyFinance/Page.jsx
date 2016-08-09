@@ -9,32 +9,29 @@ import ActionBuild from 'material-ui/svg-icons/action/build';
 import Toggle from 'material-ui/Toggle';
 import {Grid, Row, Col, Clearfix, Button, Table} from 'react-bootstrap';
 import MoneyCard from './MoneyCard.jsx';
+import DatePicker from 'material-ui/DatePicker';
 
 class Page extends React.Component {
   constructor(props){
     super(props);
+    var date = Date.now();
     this.state = {
       menuopen: false,
-      christmas: true,
-      spring: true,
-      dinein: 1500,
-      buck: 300
+      spring: false,
+      dinein: 1500.00,
+      buck: 300.00,
+      date: date
     }
     this.handleMenu = this.handleMenu.bind(this);
-    this.handleChris = this.handleChris.bind(this);
     this.handleSpring = this.handleSpring.bind(this);
     this.handleDolChange = this.handleDolChange.bind(this);
     this.handleBukChange = this.handleBukChange.bind(this);
+    this.handleDateChange = this.handleDateChange.bind(this);
   }
 
   handleMenu(){
     this.setState({menuopen: !this.state.menuopen});
   }
-
-  handleChris(){
-    this.setState({christmas: !this.state.christmas});
-  }
-
   handleSpring(){
     this.setState({spring: !this.state.spring});
   }
@@ -51,6 +48,10 @@ class Page extends React.Component {
     });
   };
 
+  handleDateChange(event, date){
+    this.setState({date:date.getTime() + 10000}, console.log(this.state.date));
+  }
+
 
   render() {
     return (
@@ -58,24 +59,24 @@ class Page extends React.Component {
         <AppBar showMenuIconButton={false} title="MyFinance" iconElementRight= {<IconButton onTouchTap={this.handleMenu}><ActionBuild /></IconButton>}/>
         <Dialog title="Settings" open={this.state.menuopen} actions={<FlatButton label="Close" onTouchTap= {this.handleMenu} />} onRequestClose= {this.handleMenu}>
           <Grid style={{display:"inline"}}>
-          <Row>
-          <Col md={6} lg={6} sm={6}>
-          <Toggle onToggle={this.handleChris} label="Exclude Christmas Break" defaultToggled={this.state.christmas} disabled/>
-          <br />
-          <Toggle onToggle={this.handleSpring} label="Exclude Spring Break" defaultToggled={this.state.spring} disabled/>
-          </Col>
-          <Col md={6} lg={6} sm={6}>
-          <TextField floatingLabelText="Starting Dine-in Dollars" floatingLabelFixed={true} onChange={this.handleDolChange} value={this.state.dinein}/> 
-          <br />
-          <TextField floatingLabelText="Starting Bevo Bucks" floatingLabelFixed={true} onChange={this.handleBukChange} value={this.state.buck}/> 
-          </Col>
-          </Row>
+            <Row>
+              <Col md={6} lg={6} sm={6}>
+                <br />
+                <Toggle onToggle={this.handleSpring} label="Include Spring Break" defaultToggled={this.state.spring} />
+                <DatePicker floatingLabelText="Jump to Date" value={new Date(this.state.date)} onChange={this.handleDateChange}/>
+              </Col>
+              <Col md={6} lg={6} sm={6}>
+                <TextField floatingLabelText="Starting Dine-in Dollars" floatingLabelFixed={true} onChange={this.handleDolChange} value={this.state.dinein}/> 
+                <br />
+                <TextField floatingLabelText="Starting Bevo Bucks" floatingLabelFixed={true} onChange={this.handleBukChange} value={this.state.buck}/> 
+              </Col>
+            </Row>
           </Grid>
         </Dialog>
-        <MoneyCard account="Dollars" start={this.state.dinein} christmas={this.state.christmas} spring={this.state.spring}/>
-        <MoneyCard account="Bucks" start={this.state.buck} christmas={this.state.christmas} spring={this.state.spring} />
+        <MoneyCard account="Dine-In Dollars" start={this.state.dinein} spring={this.state.spring} date={this.state.date}/>
+        <MoneyCard account="Bevo Bucks" start={this.state.buck} spring={this.state.spring} date={this.state.date}/>
       </div>	
-      );
+    );
   }
 }
 

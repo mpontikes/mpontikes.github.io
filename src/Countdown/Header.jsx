@@ -8,8 +8,8 @@ import TextField from 'material-ui/TextField';
 import TimePicker from 'material-ui/TimePicker';
 
 class Header extends React.Component {
-    constructor(props){
-      const minDate = new Date();
+  constructor(props){
+    const minDate = new Date();
     super(props);
     this.state = {
       dopen: false,
@@ -45,12 +45,12 @@ class Header extends React.Component {
     	<div>
        <AppBar title={this.props.header} showMenuIconButton={false} iconElementRight={<ContentAddBox onTouchTap={this.handleRequest} style={{height:50, width:50, color:"#FAFAFA"}} />}/> 
        <Dialog title="Add an event..." open={this.state.dopen} onRequestClose={this.handleRequest} actions={[<RaisedButton label="Close" secondary={true} style={{margin:12}} onTouchTap={this.handleRequest}/>, <RaisedButton label="Add" primary={true} style={{margin:12}} onTouchTap={this.handleUpdate}/>]}>
-       <TextField hintText="Type here..." floatingLabelText="Name of Event" fullWidth={true} onChange={this.handleType}/>
-       <DatePicker onChange={this.handleDate} minDate = {this.state.minD} locale="en-US" hintText="Date"/> at <TimePicker onChange={this.handleTime} hintText="Time"/>
+        <TextField hintText="Type here..." floatingLabelText="Name of Event" fullWidth={true} onChange={this.handleType}/>
+        <DatePicker onChange={this.handleDate} minDate = {this.state.minD} locale="en-US" hintText="Date"/> at <TimePicker onChange={this.handleTime} hintText="Time"/>
        </Dialog>      	
       </div>
-
-  );}
+    );
+  }
 }
 
 export default Header;

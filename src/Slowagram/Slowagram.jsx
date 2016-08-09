@@ -5,7 +5,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import {indigo500, indigo700, grey100, indigo300, grey300, grey400, grey500,pinkA200,white, darkBlack, fullBlack, cyan500, green700} from 'material-ui/styles/colors';
 import {fade} from 'material-ui/utils/colorManipulator';
-
 import MainPage from './MainPage.jsx';
 
 injectTapEventPlugin();
@@ -40,7 +39,7 @@ const muiTheme = getMuiTheme({
     pickerHeaderColor: cyan500,
     clockCircleColor: fade(darkBlack, 0.07),
     shadowColor: fullBlack,
-  },
+  }
 });
 
 const App = () => (

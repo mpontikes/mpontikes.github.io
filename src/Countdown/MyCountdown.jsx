@@ -28,7 +28,7 @@ const muiTheme = getMuiTheme({
   fontFamily: 'Roboto, sans-serif',
   palette: {
     primary1Color: "#1E3456",
-    primary2Color: "#CF5300",
+    primary2Color: "#1E3456",
     primary3Color: indigo300,
     accent1Color: "#7C3100",
     accent2Color: grey100,
@@ -38,33 +38,39 @@ const muiTheme = getMuiTheme({
     canvasColor: white,
     borderColor: grey300,
     disabledColor: fade(darkBlack, 0.3),
-    pickerHeaderColor: "#CF5300",
+    pickerHeaderColor: "#1E3456",
     clockCircleColor: fade(darkBlack, 0.07),
     shadowColor: fullBlack,
   },
 });
+
 var edata = [{title: "First Day of School", date: "1472054400000"},{title:"Mooov-In", date: "1471649400000"}, {title:"Camp Texas", date:"1470924000000"},{title:"ALEKS Due", date:"1471928340000"},{title:"UGS Leadership Summit", date:"1471874400000"},{title:"First Home Football Game", date:"1473031800000"},{title:"AlcoholEdu Part 2 Due", date:"1477612800000"}];
 var k = 0;
+
 var handleChange = function(name, date, time){
-  var jo = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), time.getHours(), time.getMinutes());
-  edata.push({title: name, date: jo});
-  console.log(edata);
+  var jo = new Date(date.getFullYear(), date.getMonth(), date.getDate(), time.getHours(), time.getMinutes());
+  var lo = jo.getTime();
+  edata.push({title: name, date: lo});
   ReactDOM.render(<MyCount />, document.getElementById('mycount'));
 }
+
 const MyCount = function(){
   var f = edata.map(function(picture) {
-  k = k+1;
-  return <Counter title={picture.title} date={picture.date} key={k}/>;});
-  return (<div>
-    <MuiThemeProvider muiTheme={muiTheme}>
-      <div>
-        <Header add={true} editor={handleChange} header="Pontikes' Countdown" data={edata}/>
-        <Grid>
-        {f}
-        </Grid>
-      </div>
-    </MuiThemeProvider>
-  </div>);
+    k = k+1;
+    return <Counter title={picture.title} date={picture.date} key={k}/>;
+  });
+  return (
+    <div>
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <div>
+          <Header add={true} editor={handleChange} header="Longhorn Countdown" data={edata}/>
+          <Grid>
+            {f}
+          </Grid>
+        </div>
+      </MuiThemeProvider>
+    </div>
+  );
 };
 
 ReactDOM.render(<MyCount />, document.getElementById('mycount'));

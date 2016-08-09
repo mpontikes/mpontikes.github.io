@@ -43,25 +43,35 @@ const muiTheme = getMuiTheme({
     shadowColor: fullBlack,
   },
 });
+
 var edata = [{title: "First Day of School", date: "1472043600000"},{title:"Mooov-In", date: "1471608000000"},{title:"ALEKS + AlcoholEdu Due", date:"1471928340000"},{title:"Girls Rush", date:"1471302000000"},{title:"First Home Football Game", date:"1473031800000"},{title:"AlcoholEdu Part 2 Due", date:"1477612800000"}];
 var k = 0;
-var handleChange= function(){
-  console.log("Sup");
+
+
+var handleChange = function(name, date, time){
+  var jo = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), time.getHours(), time.getMinutes());
+  edata.push({title: name, date: jo});
+  ReactDOM.render(<MyCount />, document.getElementById('mycount'));
 }
-const Count = function(){
+
+const MyCount = function(){
   var f = edata.map(function(picture) {
-  k = k+1;
-  return <Counter title={picture.title} date={picture.date} key={k}/>;});
-  return (<div>
-    <MuiThemeProvider muiTheme={muiTheme}>
-      <div>
-        <Header editor={handleChange} header="Longhorn Countdown"/>
-        <Grid>
-        {f}
-        </Grid>
-      </div>
-    </MuiThemeProvider>
-  </div>);
+    k = k+1;
+    return <Counter title={picture.title} date={picture.date} key={k}/>;
+  });
+  return (
+    <div>
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <div>
+          <Header add={true} editor={handleChange} header="Longhorn Countdown" data={edata}/>
+          <Grid>
+            {f}
+          </Grid>
+        </div>
+      </MuiThemeProvider>
+    </div>
+  );
 };
 
-ReactDOM.render(<Count />, document.getElementById('count'));
+ReactDOM.render(<MyCount />, document.getElementById('count'));
+
