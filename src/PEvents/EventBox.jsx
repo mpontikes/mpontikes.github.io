@@ -112,15 +112,15 @@ class EventBox extends React.Component {
           </Grid>
         </Paper>
         <Dialog actionsContainerStyle={{background: this.props.tevent.theme.c2, color: this.props.tevent.theme.text}} bodyStyle={{background: this.props.tevent.theme.c2, color: this.props.tevent.theme.text}} titleStyle={{background: this.props.tevent.theme.c2, color: this.props.tevent.theme.text, fontSize:"50px", padding: "39px"}} title={this.props.tevent.name} actions={[<RaisedButton label="Close" backgroundColor={this.props.tevent.theme.c1} labelStyle={{color: this.props.tevent.theme.text}} onTouchTap={this.handleClose}/>]} open={this.state.open} onRequestClose={this.handleClose}>
-          <Grid>
+          <Grid style={{width:700}}>
             <Row>
-              <Col md={5} lg={4} sm={6}>
+              <Col md={7} lg={7} sm={7}>
                 <span style={{fontSize: "19px"}}>{this.props.tevent.sdate} to {this.props.tevent.edate}</span>
                 <br />
                 <br />
                 {this.props.tevent.des}
               </Col>
-              <Col md={4} lg={3} sm={4}>
+              <Col md={5} lg={5} sm={5}>
                 <span style={{fontSize: "25px"}}>{this.props.tevent.location}</span>
                 <br />
                 {this.props.tevent.address.slice(0, this.props.tevent.address.indexOf(","))}

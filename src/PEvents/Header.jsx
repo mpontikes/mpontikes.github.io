@@ -48,19 +48,19 @@ class Header extends React.Component {
       var login = 
       <div>
       <FlatButton label = {"Welcome, " + this.props.user.firstname + " " + this.props.user.lastname + "!"}labelStyle={styles.text}/>
-      <FlatButton label = "Logoff" labelStyle={styles.text} onTouchTap={this.props.handleLogin} />
+      <FlatButton label = "Logoff" disabled labelStyle={styles.text} onTouchTap={this.props.handleLogin} />
       </div>;
     }
 
     return (
       <div>
-      <AppBar title="MEvents" iconElementRight={login} onLeftIconButtonTouchTap={this.handleMenu} showMenuIconButton={false}/>
+      <AppBar title="PEvents" iconElementRight={login} onLeftIconButtonTouchTap={this.handleMenu} showMenuIconButton={this.state.loggdin}/>
       <Drawer open = {this.state.menuopen}>
-        <AppBar title="Admin Menu" onLeftIconButtonTouchTap={this.handleMenu}/>
-        <MenuItem>Add Event</MenuItem>
-        <MenuItem>Get Event Code</MenuItem>
+        <AppBar title="User Menu" onLeftIconButtonTouchTap={this.handleMenu}/>
+        <MenuItem disabled>Add Event</MenuItem>
+        <MenuItem disabled>Get Event Code</MenuItem>
         <Divider />
-        <MenuItem href="https://mpontikes.github.io">Github</MenuItem>
+        <MenuItem href="https://github.com/mpontikes/mpontikes.github.io">Github</MenuItem>
         <MenuItem href="http://www.material-ui.com/#/">Material-UI</MenuItem>
         <MenuItem href="./index.html">Pontikes' Projects</MenuItem>
       </Drawer>

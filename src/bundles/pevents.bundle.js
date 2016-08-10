@@ -94,7 +94,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var defaultState = {
-	  login: false
+	  login: true
 	};
 	
 	var store = (0, _redux.createStore)(update, defaultState);
@@ -118,8 +118,8 @@
 	var udata = [{
 	  username: "mpontikes",
 	  password: "password",
-	  firstname: "Michael",
-	  lastname: "Pontikes",
+	  firstname: "Some",
+	  lastname: "User",
 	  admin: true,
 	  id: 1
 	}];
@@ -177,84 +177,84 @@
 	
 	var edata = [{
 	  name: "Austin City Limits",
-	  sdate: "7:00 pm on 06/19/16",
-	  edate: "11:00 pm on 06/19/16",
+	  sdate: "11:00 am on 07/30/16",
+	  edate: "10:00 pm on 08/2/16",
 	  location: "Zilker Park",
 	  address: "2100 Barton Springs Rd,Austin, TX 78704",
 	  theme: themes.music,
 	  price: [{ p: "$234.00", d: "07/14/16" }, { p: "$123.00", d: "06/19/16" }],
 	  soldout: true,
-	  des: "Ut vix hinc mundi essent, ne diceret definitiones mei, ius te eius augue. Scaevola gubergren comprehensam at his, nec eruditi docendi eu. Pri no idque nemore, his libris altera an. Has te unum veri urbanitas, sit mentitum percipit contentiones eu. Ut duo simul aliquid, per verear volumus hendrerit ne, te omnes oblique cum. Has debitis ponderum quaestio ad, ornatus tractatos no est.Lorem abhorreant pri id, at per alia autem verear, an quo solum facete mnesarchum. Per et cibo dolorum. No primis honestatis est, cu velit timeam salutandi pri. Eam ei elit graece consectetuer, audire accusam quaestio nam et. Facer sonet ne vim, nec minim quaerendum in. Verear disputationi ne mel, sea illum epicuri detracto cu.Per liber nostro eu, mea eu nullam copiosae recteque. Ei homero disputationi mel, ei liber dissentiet nec. Explicari laboramus eloquentiam ut sea. Vim quot constituam ex."
+	  des: "The Austin City Limits (ACL) Music Festival is an annual music festival held in Zilker Park in Austin, Texas on two consecutive three-day weekends. Inspired by the PBS concert series of the same name, the festival is produced by Austin-based company C3 Presents, which also produces Lollapalooza.[1] The reputation of the ACL television show helped contribute to the success of the first festival.The ACL Music Festival has eight stages where musical groups from genres including rock, indie, country, folk, electronic and hip hop perform for fans. Approximately 450,000 people attend the festival each year.[2][citation needed] In addition to the music performances, there are food and drinks, an art market, a kids area for families, and other activities for attendees."
 	}, {
-	  name: "Generaly General",
+	  name: "React Meetup",
 	  sdate: "7:00 pm on 06/20/16",
 	  edate: "11:00 pm on 06/20/16",
-	  location: "Frisco, TX",
-	  address: "This is an address",
+	  location: "Santa Monica, CA",
+	  address: "604 Arizona Ave, Santa Monica, CA 90401",
 	  theme: themes.general,
 	  price: [{ p: "$2.00", d: "06/19/16" }],
 	  soldout: false,
-	  des: "Blah blah blah"
+	  des: "A Meetup for React Devs"
 	}, {
-	  name: "All Sports",
-	  sdate: "4:00 pm on 06/21/16",
-	  edate: "11:00 pm on 06/21/16",
-	  location: "Austin, TX",
-	  address: "This is an address",
+	  name: "Texas VS. OU",
+	  sdate: "7:00 pm on 10/08/16",
+	  edate: "11:00 pm on 10/08/16",
+	  location: "Dallas, TX",
+	  address: "3750 The Midway, Dallas, TX 75215",
 	  theme: themes.sport,
 	  price: [{ p: "$222.00", d: "06/19/16" }],
 	  soldout: false,
-	  des: "Blah blah blah"
+	  des: "Since 1900, it has become one of college football's most eagerly anticipated games. The game usually has conference championship significance and, sometimes, national championship significance. Since 1945, one or both of the two teams has gone into the contest ranked among the top 25 teams more than 90 percent of the time."
 	}, {
-	  name: "Pay to Play",
-	  sdate: "7:00 pm on 06/22/16",
-	  edate: "11:00 pm on 06/22/16",
-	  location: "A field",
-	  address: "This is an address",
+	  name: "Madeon",
+	  sdate: "7:00 pm on 11/22/16",
+	  edate: "11:00 pm on 11/22/16",
+	  location: "Dallas,TX",
+	  address: "12345 Inwood Rd, Dallas, TX 75244",
 	  theme: themes.ticket,
 	  price: [{ p: "$2222.00", d: "06/19/16" }],
-	  soldout: false,
-	  des: "Blah blah blah"
+	  soldout: true,
+	  des: "Hugo Pierre Leclercq (born 30 May 1994), better known by his stage name Madeon, is a French songwriter, record producer, musician and DJ from Nantes, France.[1] He initially came to public attention through a YouTube video, Pop Culture, where he performed a mash-up of nearly forty different popular songs in real-time using a Novation Launchpad. It received millions of hits in its first few days of release.[2]"
 	}, {
 	  name: "Class Get-togehter",
-	  sdate: "1:00 pm on 06/23/16",
-	  edate: "11:00 pm on 06/23/16",
-	  location: "Everywhere",
-	  address: "This is an address",
+	  sdate: "1:00 pm on 08/11/16",
+	  edate: "11:00 pm on 08/11/16",
+	  location: "Austin, TX",
+	  address: "106 W Liberty Ave, Round Rock, TX 78664",
 	  theme: themes.school,
 	  price: [{ p: "Free", d: "06/19/16" }],
 	  soldout: false,
-	  des: "Blah blah blah"
+	  des: "Get together with the class."
 	}, {
-	  name: "Talking Circle",
-	  sdate: "7:00 pm on 06/20/16",
-	  edate: "11:00 pm on 06/20/16",
-	  location: "Out of cities",
-	  address: "This is an address",
+	  name: "Ice Cream Social",
+	  sdate: "11:00 am on 11/20/16",
+	  edate: "11:00 pm on 11/20/16",
+	  location: "Miami, FL",
+	  address: "3312, 1320 S Dixie Hwy, Coral Gables, FL 33146",
 	  theme: themes.social,
 	  price: [{ p: "$22.00", d: "06/19/16" }],
 	  soldout: false,
-	  des: "Blah blah blah"
+	  des: "Meet friends over icecream."
 	}, {
-	  name: "Super Importaint Thing",
-	  sdate: "7:00 pm on 06/20/16",
-	  edate: "11:00 pm on 06/20/16",
-	  location: "Here in Frisco, TX",
-	  address: "This is an address",
+	  name: "Party on the Plaza",
+	  sdate: "11:00 pm on 03/14/16",
+	  edate: "5:00 am on 03/15/16",
+	  location: "The Bahamas",
+	  address: "One Casino Drive, Suite 13, Paradise Island, Bahamas",
 	  theme: themes.importaint,
-	  price: [{ p: "$2.00", d: "06/19/16" }],
+	  price: [{ p: "$334.00", d: "06/19/16" }],
 	  soldout: false,
-	  des: "Blah blah blah"
+	  des: "It's a crazy party"
 	}, {
 	  name: "City Tours",
 	  sdate: "7:00 pm on 06/20/16",
 	  edate: "11:00 pm on 06/20/16",
-	  location: "Here in Frisco, TX",
-	  address: "This is an address",
+	  location: "Plano, TX",
+	  address: "1101 Campbell Rd Plano, TX 75093",
 	  theme: themes.city,
-	  price: [{ p: "$2.00", d: "06/19/16" }],
+	  price: [{ p: "$332.00", d: "06/19/16" }],
 	  soldout: false,
-	  des: "Blah blah blah"
+	  des: "A Tour Around Plano"
 	}];
 	
 	(0, _reactTapEventPlugin2.default)();
@@ -312,9 +312,8 @@
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, { loggedin: false, user: udata[0] }),
-	        thats,
-	        _react2.default.createElement(_FlatButton2.default, { label: 'Click me', onTouchTap: console.log("Yo") })
+	        _react2.default.createElement(_Header2.default, { loggedin: true, user: udata[0] }),
+	        thats
 	      )
 	    )
 	  );
@@ -58530,32 +58529,32 @@
 	          'div',
 	          null,
 	          _react2.default.createElement(_FlatButton2.default, { label: "Welcome, " + this.props.user.firstname + " " + this.props.user.lastname + "!", labelStyle: styles.text }),
-	          _react2.default.createElement(_FlatButton2.default, { label: 'Logoff', labelStyle: styles.text, onTouchTap: this.props.handleLogin })
+	          _react2.default.createElement(_FlatButton2.default, { label: 'Logoff', disabled: true, labelStyle: styles.text, onTouchTap: this.props.handleLogin })
 	        );
 	      }
 	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_AppBar2.default, { title: 'MEvents', iconElementRight: login, onLeftIconButtonTouchTap: this.handleMenu, showMenuIconButton: false }),
+	        _react2.default.createElement(_AppBar2.default, { title: 'PEvents', iconElementRight: login, onLeftIconButtonTouchTap: this.handleMenu, showMenuIconButton: this.state.loggdin }),
 	        _react2.default.createElement(
 	          _Drawer2.default,
 	          { open: this.state.menuopen },
-	          _react2.default.createElement(_AppBar2.default, { title: 'Admin Menu', onLeftIconButtonTouchTap: this.handleMenu }),
+	          _react2.default.createElement(_AppBar2.default, { title: 'User Menu', onLeftIconButtonTouchTap: this.handleMenu }),
 	          _react2.default.createElement(
 	            _MenuItem2.default,
-	            null,
+	            { disabled: true },
 	            'Add Event'
 	          ),
 	          _react2.default.createElement(
 	            _MenuItem2.default,
-	            null,
+	            { disabled: true },
 	            'Get Event Code'
 	          ),
 	          _react2.default.createElement(_Divider2.default, null),
 	          _react2.default.createElement(
 	            _MenuItem2.default,
-	            { href: 'https://mpontikes.github.io' },
+	            { href: 'https://github.com/mpontikes/mpontikes.github.io' },
 	            'Github'
 	          ),
 	          _react2.default.createElement(
@@ -61796,13 +61795,13 @@
 	          { actionsContainerStyle: { background: this.props.tevent.theme.c2, color: this.props.tevent.theme.text }, bodyStyle: { background: this.props.tevent.theme.c2, color: this.props.tevent.theme.text }, titleStyle: { background: this.props.tevent.theme.c2, color: this.props.tevent.theme.text, fontSize: "50px", padding: "39px" }, title: this.props.tevent.name, actions: [_react2.default.createElement(_RaisedButton2.default, { label: 'Close', backgroundColor: this.props.tevent.theme.c1, labelStyle: { color: this.props.tevent.theme.text }, onTouchTap: this.handleClose })], open: this.state.open, onRequestClose: this.handleClose },
 	          _react2.default.createElement(
 	            _reactBootstrap.Grid,
-	            null,
+	            { style: { width: 700 } },
 	            _react2.default.createElement(
 	              _reactBootstrap.Row,
 	              null,
 	              _react2.default.createElement(
 	                _reactBootstrap.Col,
-	                { md: 5, lg: 4, sm: 6 },
+	                { md: 7, lg: 7, sm: 7 },
 	                _react2.default.createElement(
 	                  'span',
 	                  { style: { fontSize: "19px" } },
@@ -61816,7 +61815,7 @@
 	              ),
 	              _react2.default.createElement(
 	                _reactBootstrap.Col,
-	                { md: 4, lg: 3, sm: 4 },
+	                { md: 5, lg: 5, sm: 5 },
 	                _react2.default.createElement(
 	                  'span',
 	                  { style: { fontSize: "25px" } },
