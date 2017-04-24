@@ -120,7 +120,7 @@
 	  }
 	});
 	
-	var edata = [{ title: "First Day of School", date: "1472043600000" }, { title: "Mooov-In", date: "1471608000000" }, { title: "ALEKS + AlcoholEdu Due", date: "1471928340000" }, { title: "Girls Rush", date: "1471302000000" }, { title: "First Home Football Game", date: "1473031800000" }, { title: "AlcoholEdu Part 2 Due", date: "1477612800000" }];
+	var edata = [{ title: "Labun's Physics Final (WCH 1.120)", date: "1494460800000" }];
 	var k = 0;
 	
 	var handleChange = function handleChange(name, date, time) {
@@ -143,7 +143,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'Longhorn Countdown', data: edata }),
+	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'Physics Countdown', data: edata }),
 	        _react2.default.createElement(
 	          _reactBootstrap.Grid,
 	          null,
