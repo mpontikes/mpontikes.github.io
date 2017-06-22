@@ -120,7 +120,7 @@
 	  }
 	});
 	
-	var edata = [{ title: "Labun's Physics Final (WCH 1.120)", date: "1494460800000" }];
+	var edata = [{ title: "Start of 2017 Fall Semester", date: "1504098000000" }];
 	var k = 0;
 	
 	var handleChange = function handleChange(name, date, time) {
