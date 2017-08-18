@@ -1,0 +1,50 @@
+import React, {Component, PropTypes} from 'react';
+import AppBar from 'material-ui/AppBar';
+import IconButton from 'material-ui/IconButton';
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
+import TextField from 'material-ui/TextField';
+import {grey50} from 'material-ui/styles/colors';
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
+import Divider from 'material-ui/Divider';
+
+const styles = {
+  text:{
+    color: grey50,
+  }
+};
+
+class Header extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      menuopen: false
+    }
+    this.handleMenu = this.handleMenu.bind(this);
+  }
+
+  handleMenu(){
+    this.setState({menuopen: !this.state.menuopen});
+  }
+
+  render() {
+    return (
+      <div>
+      <AppBar title="UT Legilative Summeries" onLeftIconButtonTouchTap={this.handleMenu} showMenuIconButton={true}/>
+      <Drawer open = {this.state.menuopen}>
+        <AppBar title="User Menu" onLeftIconButtonTouchTap={this.handleMenu}/>
+        <MenuItem disabled>Add Event</MenuItem>
+        <MenuItem disabled>Get Event Code</MenuItem>
+        <Divider />
+        <MenuItem href="https://github.com/mpontikes/mpontikes.github.io">Github</MenuItem>
+        <MenuItem href="http://www.material-ui.com/#/">Material-UI</MenuItem>
+        <MenuItem href="./index.html">Pontikes' Projects</MenuItem>
+      </Drawer>
+      </div>	
+      );
+  }
+}
+
+export default Header;

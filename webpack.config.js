@@ -13,7 +13,8 @@ var config = {
     countdown: APP_DIR + '/Countdown/Countdown.jsx',
     mycountdown: APP_DIR + '/Countdown/MyCountdown.jsx',
     film: APP_DIR + '/Film/Film.jsx',
-    finance: APP_DIR + '/MyFinance/MyFinance.jsx'
+    finance: APP_DIR + '/MyFinance/MyFinance.jsx',
+    utls: APP_DIR + '/UTLS/UTLS.jsx'
   },
   module : {
     loaders : [
