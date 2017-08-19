@@ -120,7 +120,7 @@
 	  }
 	});
 	
-	var edata = [{ title: "First Day of School", date: "1472054400000" }, { title: "Mooov-In", date: "1471649400000" }, { title: "Camp Texas", date: "1470924000000" }, { title: "ALEKS Due", date: "1471928340000" }, { title: "UGS Leadership Summit", date: "1471874400000" }, { title: "First Home Football Game", date: "1473031800000" }, { title: "AlcoholEdu Part 2 Due", date: "1477612800000" }];
+	var edata = [{ title: "Leave for College Station", date: "1503234000000" }, { title: "Leave for Austin", date: "1503676800000" }, { title: "Classes Start", date: "1504101600000" }, { title: "Decision Due", date: "1505167200000" }, { title: "First Football Game", date: "1504368000000" }, { title: "AlcoholEdu Part 2 Due", date: "1477612800000" }];
 	var k = 0;
 	
 	var handleChange = function handleChange(name, date, time) {
@@ -144,7 +144,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'Longhorn Countdown', data: edata }),
+	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: '2017 Fall Countdown', data: edata }),
 	        _react2.default.createElement(
 	          _reactBootstrap.Grid,
 	          null,
