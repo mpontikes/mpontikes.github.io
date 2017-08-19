@@ -38,6 +38,14 @@
       version    : 'v2.10'
     });
     FB.AppEvents.logPageView();
+    FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    console.log('Logged in.');
+  }
+  else {
+    FB.login();
+  }
+});
     FB.api('/1218486471522469/members', function(response) {
       console.log(response);
     });
