@@ -104,7 +104,7 @@
 	    primary1Color: _colors.indigo500,
 	    primary2Color: _colors.indigo700,
 	    primary3Color: _colors.indigo300,
-	    accent1Color: _colors.green700,
+	    accent1Color: '#bf5700',
 	    accent2Color: _colors.grey100,
 	    accent3Color: _colors.grey500,
 	    textColor: _colors.darkBlack,
@@ -34688,6 +34688,13 @@
 	  },
 	  underline: {
 	    borderColor: '#303F9F'
+	  },
+	  header: {
+	    fontWeight: 'bold',
+	    fontSize: 35
+	  },
+	  subtext: {
+	    fontSize: 20
 	  }
 	};
 	
@@ -34721,22 +34728,32 @@
 	          _Paper2.default,
 	          { style: styles.paper },
 	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
-	            'h1',
-	            null,
+	            'span',
+	            { style: styles.header },
 	            'The University of Texas at Austin Community Facebook Groups'
 	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Below is a list of groups on Facebook that are ment to bring the community of UT together through discussions, memes, and other means.'
+	            'span',
+	            { style: styles.subtext },
+	            'UT Austin has a vast community with all types of intrests. Below I have listed some UT Facebook groups that you can join to chat, argue, post, and meme about UT culture. These pages are not endorsed by UT Austin and are monitored by students.'
 	          ),
-	          _react2.default.createElement(_RaisedButton2.default, { label: 'Click here to suggest a new group!', href: 'https://github.com/mpontikes/mpontikes.github.io', secondary: true, style: styles.button })
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(_RaisedButton2.default, { label: 'Click here to suggest a new group!', href: 'https://goo.gl/forms/T0hBsV6183fg1MOg1', secondary: true, style: styles.button }),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null)
 	        ),
-	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT LONGmemes for HORNSy teens', url: 'https://www.facebook.com/groups/UTLongmemes/', dec: 'Memes', disable: false }),
-	        _react2.default.createElement(_ProjectCard2.default, { title: 'OverHERD at UT Austin', url: 'https://www.facebook.com/groups/oVeRhEaRdaTuTAuStIn/', dec: 'Conversations taken out of context', disable: false }),
-	        _react2.default.createElement(_ProjectCard2.default, { title: 'Bevo\'s Wholesome Meme Stash', url: 'https://www.facebook.com/groups/295585077520465/', dec: 'Memes that make you feel good', disable: false }),
-	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT Austin discussion & petty arguments', url: 'https://www.facebook.com/groups/187052928705558/', dec: 'Arguments', disable: true })
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT LONGmemes for HORNSy teens', url: 'https://www.facebook.com/groups/UTLongmemes/', dec: 'Like memes? This is the offical UT Meme Page! Enjoy memes about everything UT!', disable: false }),
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'OverHERD at UT Austin', url: 'https://www.facebook.com/groups/oVeRhEaRdaTuTAuStIn/', dec: 'Said something and thought \'I really hope that no one took this out of context\'? Well it might be on this page!', disable: false }),
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'Bevo\'s Wholesome Meme Stash', url: 'https://www.facebook.com/groups/295585077520465/', dec: 'Feeling down? Well check out these wholesome memes to feel better!', disable: false }),
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT Austin discussion & petty arguments', url: 'https://www.facebook.com/groups/187052928705558/', dec: 'Feel like agruing with people? Well you\'ve come to the right place!', disable: false }),
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT Missed Connections', url: 'https://www.facebook.com/groups/719698794904072/', dec: 'What to get in contact with some random person you passed on Speedway? It might be a longshot, but hey, anything is possible!', disable: false })
 	      );
 	    }
 	  }]);
@@ -34788,6 +34805,9 @@
 		},
 		button: {
 			margin: 23
+		},
+		subtext: {
+			fontSize: 20
 		}
 	};
 	
@@ -34815,12 +34835,13 @@
 						' '
 					),
 					_react2.default.createElement(
-						'h3',
-						null,
+						'span',
+						{ style: styles.subtext },
 						' ',
 						this.props.dec,
 						' '
 					),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement(_RaisedButton2.default, { label: 'Go', href: this.props.url, secondary: true, style: styles.button, disabled: this.props.disable })
 				);
 			}

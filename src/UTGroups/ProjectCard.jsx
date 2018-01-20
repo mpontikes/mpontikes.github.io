@@ -9,7 +9,10 @@ const styles = {
 	},
 	button:{
 		margin: 23
-	}
+	},
+	subtext:{
+    fontSize: 20,
+  }
 };
 
 class ProjectCard extends React.Component {
@@ -24,7 +27,8 @@ class ProjectCard extends React.Component {
 			<Paper style={styles.paper}>
 				<br />
 				<h1> {this.props.title} </h1>
-				<h3> {this.props.dec} </h3>
+				<span style={styles.subtext}> {this.props.dec} </span>
+				<br />
 				<RaisedButton label="Go" href={this.props.url} secondary={true} style={styles.button} disabled={this.props.disable}/>
             </Paper>
 		)
