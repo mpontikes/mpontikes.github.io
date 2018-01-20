@@ -14,7 +14,8 @@ var config = {
     mycountdown: APP_DIR + '/Countdown/MyCountdown.jsx',
     film: APP_DIR + '/Film/Film.jsx',
     finance: APP_DIR + '/MyFinance/MyFinance.jsx',
-    utls: APP_DIR + '/UTLS/UTLS.jsx'
+    utls: APP_DIR + '/UTLS/UTLS.jsx',
+    utgroup: APP_DIR + "/UTGroups/UTGroups.jsx"
   },
   module : {
     loaders : [

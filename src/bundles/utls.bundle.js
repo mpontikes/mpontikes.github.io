@@ -83,11 +83,11 @@
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _Header = __webpack_require__(/*! ./Header.jsx */ 823);
+	var _Header = __webpack_require__(/*! ./Header.jsx */ 825);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _EventBox = __webpack_require__(/*! ./EventBox.jsx */ 824);
+	var _EventBox = __webpack_require__(/*! ./EventBox.jsx */ 826);
 	
 	var _EventBox2 = _interopRequireDefault(_EventBox);
 	
@@ -62228,7 +62228,9 @@
 /* 820 */,
 /* 821 */,
 /* 822 */,
-/* 823 */
+/* 823 */,
+/* 824 */,
+/* 825 */
 /*!*****************************!*\
   !*** ./src/UTLS/Header.jsx ***!
   \*****************************/
@@ -62362,7 +62364,7 @@
 	exports.default = Header;
 
 /***/ },
-/* 824 */
+/* 826 */
 /*!*******************************!*\
   !*** ./src/UTLS/EventBox.jsx ***!
   \*******************************/
