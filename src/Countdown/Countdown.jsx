@@ -44,7 +44,7 @@ const muiTheme = getMuiTheme({
   },
 });
 
-var edata = [{title: "Start of 2017 Fall Semester", date: "1504098000000"}];
+var edata = [{title: "End of the Year", date: "1558400400000"},{title: "Time to Graduation", date: "1590022800000"}];
 var k = 0;
 
 
@@ -63,7 +63,8 @@ const MyCount = function(){
     <div>
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
-          <Header add={true} editor={handleChange} header="Physics Countdown" data={edata}/>
+          <Header add={true} editor={handleChange} header="Countdown Clocks" data={edata}/>
+          {" \n"}
           <Grid>
             {f}
           </Grid>

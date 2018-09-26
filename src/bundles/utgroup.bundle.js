@@ -34670,6 +34670,10 @@
 	
 	var _ProjectCard2 = _interopRequireDefault(_ProjectCard);
 	
+	var _ProjectCard3 = __webpack_require__(/*! ./ProjectCard3.jsx */ 825);
+	
+	var _ProjectCard4 = _interopRequireDefault(_ProjectCard3);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34753,7 +34757,8 @@
 	        _react2.default.createElement(_ProjectCard2.default, { title: 'OverHERD at UT Austin', url: 'https://www.facebook.com/groups/oVeRhEaRdaTuTAuStIn/', dec: 'Said something and thought \'I really hope that no one took this out of context\'? Well it might be on this page!', disable: false }),
 	        _react2.default.createElement(_ProjectCard2.default, { title: 'Bevo\'s Wholesome Meme Stash', url: 'https://www.facebook.com/groups/295585077520465/', dec: 'Feeling down? Well check out these wholesome memes to feel better!', disable: false }),
 	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT Austin discussion & petty arguments', url: 'https://www.facebook.com/groups/187052928705558/', dec: 'Feel like agruing with people? Well you\'ve come to the right place!', disable: false }),
-	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT Missed Connections', url: 'https://www.facebook.com/groups/719698794904072/', dec: 'What to get in contact with some random person you passed on Speedway? It might be a longshot, but hey, anything is possible!', disable: false })
+	        _react2.default.createElement(_ProjectCard2.default, { title: 'UT Missed Connections', url: 'https://www.facebook.com/groups/719698794904072/', dec: 'What to get in contact with some random person you passed on Speedway? It might be a longshot, but hey, anything is possible!', disable: false }),
+	        _react2.default.createElement(_ProjectCard4.default, { title: 'UT Rideshares', url: 'https://www.facebook.com/groups/112632332199263/', dec: 'Need a ride? Need gas money? Find students who are headed in that direction to go with or take with you!', disable: false })
 	      );
 	    }
 	  }]);
@@ -34857,6 +34862,103 @@
 		disable: _react.PropTypes.bool
 	};
 	exports.default = ProjectCard;
+
+/***/ },
+/* 825 */
+/*!***************************************!*\
+  !*** ./src/UTGroups/ProjectCard3.jsx ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _Paper = __webpack_require__(/*! material-ui/Paper */ 630);
+	
+	var _Paper2 = _interopRequireDefault(_Paper);
+	
+	var _RaisedButton = __webpack_require__(/*! material-ui/RaisedButton */ 639);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var styles = {
+		paper: {
+			margin: 25,
+			textAlign: 'center'
+		},
+		button: {
+			margin: 23
+		},
+		subtext: {
+			fontSize: 20
+		}
+	};
+	
+	var ProjectCard3 = function (_React$Component) {
+		_inherits(ProjectCard3, _React$Component);
+	
+		function ProjectCard3() {
+			_classCallCheck(this, ProjectCard3);
+	
+			return _possibleConstructorReturn(this, Object.getPrototypeOf(ProjectCard3).apply(this, arguments));
+		}
+	
+		_createClass(ProjectCard3, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					_Paper2.default,
+					{ style: styles.paper },
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						'h1',
+						null,
+						' ',
+						this.props.title,
+						' '
+					),
+					_react2.default.createElement(
+						'span',
+						{ style: styles.subtext },
+						' ',
+						this.props.dec,
+						' '
+					),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(_RaisedButton2.default, { label: 'All', href: this.props.url, secondary: true, style: styles.button, disabled: this.props.disable }),
+					_react2.default.createElement(_RaisedButton2.default, { label: 'Student Only', href: "https://www.facebook.com/groups/538118403057115/", secondary: true, style: styles.button, disabled: this.props.disable }),
+					_react2.default.createElement(_RaisedButton2.default, { label: 'UT and A&M', href: "https://www.facebook.com/groups/1383873768509170/", secondary: true, style: styles.button, disabled: this.props.disable })
+				);
+			}
+		}]);
+	
+		return ProjectCard3;
+	}(_react2.default.Component);
+	
+	ProjectCard3.propTypes = {
+		title: _react.PropTypes.string,
+		dec: _react.PropTypes.string,
+		url: _react.PropTypes.string,
+		disable: _react.PropTypes.bool
+	};
+	exports.default = ProjectCard3;
 
 /***/ }
 /******/ ]);

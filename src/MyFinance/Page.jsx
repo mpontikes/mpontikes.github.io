@@ -14,7 +14,7 @@ import DatePicker from 'material-ui/DatePicker';
 class Page extends React.Component {
   constructor(props){
     super(props);
-    var date = Date.now();
+    var date = 1481781600001;
     this.state = {
       menuopen: false,
       spring: false,

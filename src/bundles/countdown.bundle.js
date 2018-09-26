@@ -120,7 +120,7 @@
 	  }
 	});
 	
-	var edata = [{ title: "Start of 2017 Fall Semester", date: "1504098000000" }];
+	var edata = [{ title: "End of the Year", date: "1558400400000" }, { title: "Time to Graduation", date: "1590022800000" }];
 	var k = 0;
 	
 	var handleChange = function handleChange(name, date, time) {
@@ -143,7 +143,8 @@
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'Physics Countdown', data: edata }),
+	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'Countdown Clocks', data: edata }),
+	        " \n",
 	        _react2.default.createElement(
 	          _reactBootstrap.Grid,
 	          null,

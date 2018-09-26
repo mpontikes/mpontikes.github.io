@@ -60007,7 +60007,7 @@
 	
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Page).call(this, props));
 	
-	    var date = Date.now();
+	    var date = 1481781600001;
 	    _this.state = {
 	      menuopen: false,
 	      spring: false,

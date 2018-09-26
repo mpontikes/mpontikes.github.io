@@ -4,6 +4,7 @@ import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 import FontIcon from 'material-ui/FontIcon';
 import ProjectCard from './ProjectCard.jsx';
+import ProjectCard3 from './ProjectCard3.jsx';
 
 const styles = {
   paper:{
@@ -60,7 +61,8 @@ class HomePage extends React.Component {
         <ProjectCard title="OverHERD at UT Austin" url="https://www.facebook.com/groups/oVeRhEaRdaTuTAuStIn/" dec="Said something and thought 'I really hope that no one took this out of context'? Well it might be on this page!" disable={false} />
         <ProjectCard title="Bevo's Wholesome Meme Stash" url="https://www.facebook.com/groups/295585077520465/" dec="Feeling down? Well check out these wholesome memes to feel better!" disable={false} />
         <ProjectCard title="UT Austin discussion & petty arguments" url="https://www.facebook.com/groups/187052928705558/" dec="Feel like agruing with people? Well you've come to the right place!" disable={false} /> 
-        <ProjectCard title="UT Missed Connections" url="https://www.facebook.com/groups/719698794904072/" dec="What to get in contact with some random person you passed on Speedway? It might be a longshot, but hey, anything is possible!" disable={false} /> 
+        <ProjectCard title="UT Missed Connections" url="https://www.facebook.com/groups/719698794904072/" dec="What to get in contact with some random person you passed on Speedway? It might be a longshot, but hey, anything is possible!" disable={false} />
+        <ProjectCard3 title="UT Rideshares" url="https://www.facebook.com/groups/112632332199263/" dec="Need a ride? Need gas money? Find students who are headed in that direction to go with or take with you!" disable={false} />  
       </div>	
     );
   }

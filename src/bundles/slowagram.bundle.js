@@ -44299,7 +44299,7 @@
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MainPage).call(this, props));
 	
 	        _this.state = {
-	            data: [{ pi: "https://pbs.twimg.com/media/B_TXcfEVIAAY0K1.png", da: "06//13/16", us: "mpontikes", av: "https://pbs.twimg.com/profile_images/709013243583279105/WNFfT9UX.jpg", ca: "Snow Day" }, { pi: "https://s3.amazonaws.com/infinum.web.production/repository_items/files/000/000/429/original/1.png?1413359570", da: "05//19/16", us: "matid", av: "https://avatars0.githubusercontent.com/u/19177617?v=3", ca: "New ticket app!" }],
+	            data: [{ pi: "https://news.utexas.edu/sites/default/files/styles/news_article_main_image/public/photos/2009_044405.jpg?itok=oOVhzDzE", da: "06/13/18", us: "mpontikes", av: "https://pbs.twimg.com/profile_images/1027736654080028674/Bm7mIpZb_400x400.jpg", ca: "UT Austin!" }, { pi: "https://s3.amazonaws.com/infinum.web.production/repository_items/files/000/000/429/original/1.png?1413359570", da: "05/19/18", us: "anotherUser", av: "https://avatars0.githubusercontent.com/u/19177617?v=3", ca: "New ticket app!" }],
 	            user: "Anonymous",
 	            login: false,
 	            pic: "",
