@@ -1,0 +1,32 @@
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content= "summary"/>
+    <meta name="twitter:site" content="@m1chael62" />
+    <meta name="twitter:creator" content="@m1chael62" />
+    <meta property="og:url" content="mpontikes.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SG Meetings" />
+    <meta property="og:description" content="List of SG Meetings" />
+    <meta property="og:site_name" content="SG Meetings">
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/709013243583279105/WNFfT9UX.jpg">
+    <title>SG Meetings</title>
+    <link rel="shortcut icon" href="favicon.png?" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82273907-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-82273907-1');
+    </script>
+  </head>
+  <style>
+  </style>
+  <body style="background-color: #C9D9F1">
+    <h1>This is my code lol</h1>
+  </body>
+</html>
