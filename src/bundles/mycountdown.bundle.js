@@ -144,11 +144,13 @@
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: '2017 Fall Countdown', data: edata }),
+	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'Days until SUPER SMASH BROS ULTIMATE', data: edata }),
 	        _react2.default.createElement(
-	          _reactBootstrap.Grid,
+	          'div',
 	          null,
-	          f
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(_Counter2.default, { title: 'Time Until SSBU', date: '1544162400000', key: k })
 	        )
 	      )
 	    )

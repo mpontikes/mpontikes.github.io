@@ -63,10 +63,15 @@ const MyCount = function(){
     <div>
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
-          <Header add={true} editor={handleChange} header="2017 Fall Countdown" data={edata}/>
-          <Grid>
-            {f}
-          </Grid>
+          <Header add={true} editor={handleChange} header="Days until SUPER SMASH BROS ULTIMATE" data={edata}/>
+          {/*<Grid>
+            {{f}}
+          </Grid>*/}
+          <div>
+            <br />
+            <br />
+              <Counter title="Time Until SSBU" date="1544162400000" key={k}/>
+          </div>
         </div>
       </MuiThemeProvider>
     </div>
