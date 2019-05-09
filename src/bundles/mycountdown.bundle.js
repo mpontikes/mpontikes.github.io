@@ -120,7 +120,7 @@
 	  }
 	});
 	
-	var edata = [{ title: "Leave for College Station", date: "1503234000000" }, { title: "Leave for Austin", date: "1503676800000" }, { title: "Classes Start", date: "1504101600000" }, { title: "Decision Due", date: "1505167200000" }, { title: "First Football Game", date: "1504368000000" }, { title: "AlcoholEdu Part 2 Due", date: "1477612800000" }];
+	var edata = [{ title: "The LR is due in...", date: "1557550740000" }];
 	var k = 0;
 	
 	var handleChange = function handleChange(name, date, time) {
@@ -144,7 +144,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: '2017 Fall Countdown', data: edata }),
+	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'we are in the endgame now', data: edata }),
 	        _react2.default.createElement(
 	          _reactBootstrap.Grid,
 	          null,
