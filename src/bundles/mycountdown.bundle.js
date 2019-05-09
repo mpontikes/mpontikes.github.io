@@ -146,11 +146,9 @@
 	        null,
 	        _react2.default.createElement(_Header2.default, { add: true, editor: handleChange, header: 'we are in the endgame now', data: edata }),
 	        _react2.default.createElement(
-	          'div',
+	          _reactBootstrap.Grid,
 	          null,
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(_Counter2.default, { title: 'Time Until SSBU', date: '1544162400000', key: k })
+	          f
 	        )
 	      )
 	    )
